@@ -7,3 +7,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.rm-wrapper {
+  @apply flex justify-center items-center relative;
+}
+.rm-container {
+  @apply max-w-7xl mx-auto px-6 sm:px-2 w-full;
+}
+.rm-btn {
+  @apply px-5 py-3;
+  &primary {
+    @apply bg-slate-500 text-white font-semibold;
+  }
+}
+h1 span {
+  @apply leading-[1.2];
+}

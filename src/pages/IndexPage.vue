@@ -18,49 +18,51 @@
       <h1 class="text-5xl text-white font-bold">Bienvenue sur notre site</h1>
     </div>
   </div>
-  <div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis cum
-    unde! Animi in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi
-    in saepe pariatur sint porro illum, sequi consectetur sapiente
-    necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+  <div class="rm-wrapper">
+    <div class="rm-container text-justify">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
+      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
+      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
+    </div>
   </div>
 </template>
 
