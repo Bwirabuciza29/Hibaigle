@@ -87,6 +87,7 @@
               'transition-opacity duration-500 ease-in-out',
               { 'opacity-0': !isMenuVisible, 'opacity-100': isMenuVisible },
             ]"
+            data-aos="fade-up"
           >
             <div class="flex flex-col gap-4 my-4 text-gray-400">
               <a

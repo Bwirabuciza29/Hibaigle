@@ -6,17 +6,15 @@
   </q-layout>
 </template>
 
-<script>
-import { defineComponent, ref } from "vue";
+<script setup>
+import { onMounted } from "vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-export default defineComponent({
-  methods: {},
-  name: "MainLayout",
-
-  components: {},
-
-  setup() {
-    return {};
-  },
+onMounted(() => {
+  AOS.init({
+    duration: 700,
+    once: true,
+  });
 });
 </script>
