@@ -10,23 +10,93 @@
         class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
       >
         <div class="pl-4 flex items-center">
-          <q-img class="w-16 my-2" src="~assets/lg.png" />
+          <q-img class="w-20 my-2" src="~assets/logo.png" />
         </div>
         <div>
-          <ul class="flex items-center gap-4 font-semibold">
-            <li><a href="#" class="hover:text-sky-500">Accueil</a></li>
-            <li><a href="#" class="hover:text-sky-500">Annonces</a></li>
-            <li><a href="#" class="hover:text-sky-500">A Propos</a></li>
-            <li><a href="#" class="hover:text-sky-500">Services</a></li>
-            <li><a href="#" class="hover:text-sky-500">Equipe</a></li>
-            <li><a href="#" class="hover:text-sky-500">Contact</a></li>
+          <ul
+            class="flex items-center gap-4 font-semibold transition-colors duration-300 ease-in-out"
+            :class="{ 'text-black': isScrolled }"
+          >
+            <li>
+              <a
+                href="#"
+                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
+              >
+                Accueil
+                <span
+                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
+              >
+                Annonces
+                <span
+                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
+              >
+                A Propos
+                <span
+                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
+              >
+                Services
+                <span
+                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
+              >
+                Equipe
+                <span
+                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
+              >
+                Contact
+                <span
+                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                ></span>
+              </a>
+            </li>
           </ul>
         </div>
+
         <div>
           <button
-            class="bg-sky-900 text-white rm-btn rounded-lg font-semibold hover:bg-sky-600"
+            class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-blue-500 rounded overflow-hidden group"
           >
-            h~LAC
+            <span
+              class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
+              >h~LAC</span
+            >
+            <div
+              class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+            ></div>
           </button>
         </div>
       </div>
