@@ -53,6 +53,7 @@
             :icon="isMenuOpen ? 'close' : 'menu'"
             aria-label="Menu"
             class="text-lg transition-transform duration-200 ease-in-out transform active:scale-90"
+            :class="{ 'text-sky-900': isScrolled }"
           />
         </div>
       </div>
@@ -177,7 +178,12 @@ onUnmounted(() => {
 }
 
 .background-image {
-  background-image: url("/src/assets/hero-bg.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      /* Couleur de gradient (noir avec opacité) */ rgba(0, 0, 0, 0.5)
+        /* Couleur de gradient (noir avec opacité) */
+    ),
+    url("/src/assets/hero-bg.jpg"); /* Image de fond */
   background-size: cover;
   background-position: center;
 }
