@@ -14,7 +14,7 @@
   @apply max-w-7xl mx-auto px-6 sm:px-2 w-full;
 }
 .rm-btn {
-  @apply px-5 py-3;
+  @apply px-5 py-2;
   &primary {
     @apply bg-slate-500 text-white font-semibold;
   }
@@ -31,4 +31,3 @@ html::-webkit-scrollbar-thumb {
   border-radius: 2rem;
   background: #fff;
 }
-

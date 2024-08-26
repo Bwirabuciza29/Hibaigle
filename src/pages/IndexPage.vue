@@ -9,7 +9,26 @@
       <div
         class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
       >
-        <q-img class="w-16 my-2" src="~assets/lg.png" />
+        <div class="pl-4 flex items-center">
+          <q-img class="w-16 my-2" src="~assets/lg.png" />
+        </div>
+        <div>
+          <ul class="flex items-center gap-4 font-semibold">
+            <li><a href="#" class="hover:text-sky-500">Accueil</a></li>
+            <li><a href="#" class="hover:text-sky-500">Annonces</a></li>
+            <li><a href="#" class="hover:text-sky-500">A Propos</a></li>
+            <li><a href="#" class="hover:text-sky-500">Services</a></li>
+            <li><a href="#" class="hover:text-sky-500">Equipe</a></li>
+            <li><a href="#" class="hover:text-sky-500">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="bg-sky-900 text-white rm-btn rounded-lg font-semibold hover:bg-sky-600"
+          >
+            h~LAC
+          </button>
+        </div>
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
