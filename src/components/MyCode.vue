@@ -4,6 +4,7 @@
       <q-toolbar class="bg-white">
         <q-toolbar-title>
           <q-img class="q-pt-xs" src="~assets/hib.png" style="width: 90px" />
+          
         </q-toolbar-title>
         <div class="gt-sm">
           <q-btn class="q-mr-xs" flat color="primary" label="Course" />
