@@ -22,3 +22,12 @@
 h1 span {
   @apply leading-[1.2];
 }
+html::-webkit-scrollbar {
+  width: 0.2rem;
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background: #fff;
+}
