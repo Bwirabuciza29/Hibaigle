@@ -12,72 +12,17 @@
         <div class="pl-4 flex items-center">
           <q-img class="w-20 my-2" src="~assets/logo.png" />
         </div>
-        <div>
+        <div class="gt-sm">
           <ul
             class="flex items-center gap-4 font-semibold transition-colors duration-300 ease-in-out"
             :class="{ 'text-black': isScrolled }"
           >
-            <li>
+            <li v-for="item in menuItems" :key="item.name">
               <a
                 href="#"
                 class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
               >
-                Accueil
-                <span
-                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
-              >
-                Annonces
-                <span
-                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
-              >
-                A Propos
-                <span
-                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
-              >
-                Services
-                <span
-                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
-              >
-                Equipe
-                <span
-                  class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
-              >
-                Contact
+                {{ item.name }}
                 <span
                   class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
                 ></span>
@@ -86,9 +31,9 @@
           </ul>
         </div>
 
-        <div>
+        <div class="gt-sm">
           <button
-            class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-blue-500 rounded overflow-hidden group"
+            class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
           >
             <span
               class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
@@ -99,12 +44,26 @@
             ></div>
           </button>
         </div>
+        <div class="lt-md">
+          <q-btn
+            flat
+            round
+            dense
+            @click="toggleMenus"
+            :icon="isMenuOpen ? 'close' : 'menu'"
+            aria-label="Menu"
+            class="text-lg transition-transform duration-200 ease-in-out transform active:scale-90"
+          />
+        </div>
       </div>
+
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
     <!-- Image de fond -->
     <div class="background-image h-screen flex items-center justify-center">
-      <h1 class="text-5xl text-white font-bold">Bienvenue sur notre site</h1>
+      <h1 class="text-5xl text-white font-bold">
+        Meilleur expérience numérique
+      </h1>
     </div>
   </div>
   <div class="rm-wrapper bg-white">
@@ -172,12 +131,24 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+const menuItems = [
+  { name: "Accueil" },
+  { name: "Annonces" },
+  { name: "A Propos" },
+  { name: "Services" },
+  { name: "Equipe" },
+  { name: "Contact" },
+];
 
 const isScrolled = ref(false);
 const isMenuVisible = ref(false);
 
 const toggleMenu = () => {
   isMenuVisible.value = !isMenuVisible.value;
+};
+const isMenuOpen = ref(false);
+const toggleMenus = () => {
+  isMenuOpen.value = !isMenuOpen.value;
 };
 
 const handleScroll = () => {
