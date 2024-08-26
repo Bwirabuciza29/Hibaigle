@@ -64,14 +64,44 @@
       </div>
     </div>
     <!-- Dialogue -->
-    <q-dialog v-model="dialog" :backdrop-filter="backdropFilter">
+    <q-dialog v-model="dialog" full-width :backdrop-filter="backdropFilter">
       <div
         class="blur-background w-full bg-sky-900 bg-opacity-70 text-white border border-gray-400"
       >
         <div class="container mx-auto grid flex-wrap mt-0 px-2">
-          <div class="pl-4 flex items-center">
+          <div class="pl-4 flex items-center justify-between">
             <q-img class="w-20 my-2" src="~assets/logo.png" />
+            <q-btn
+              flat
+              icon="close"
+              class="bg-sky-500 bg-opacity-20 text-lg transition-transform duration-200 ease-in-out transform active:scale-90"
+              v-close-popup
+            />
           </div>
+          <div class="border border-x-white w-full"></div>
+
+          <nav
+            :class="[
+              'flex gap-2 items-center',
+              isScrolled ? 'bg-gray-800 shadow-lg' : '',
+              'transition-opacity duration-500 ease-in-out',
+              { 'opacity-0': !isMenuVisible, 'opacity-100': isMenuVisible },
+            ]"
+          >
+            <div class="flex flex-col gap-4 my-4 text-gray-400">
+              <a
+                v-for="item in menuItems"
+                :key="item.name"
+                :class="linkClass(item.name)"
+                @click="setActiveLink(item.name)"
+                href="#"
+                class="text-xl font-bold ml-4 hover:text-white"
+              >
+                {{ item.name }}
+              </a>
+            </div>
+          </nav>
+          <div class="mt-8 text-sm">© 2023 Wizee x Studio. Made with ♥</div>
         </div>
       </div>
     </q-dialog>
@@ -93,10 +123,25 @@ const menuItems = [
 
 // États pour la visibilité du menu et le défilement
 const isScrolled = ref(false);
-const isMenuVisible = ref(false);
+const isMenuVisible = ref(true); // Définir sur `true` si vous voulez que le menu soit visible au démarrage
 const isMenuOpen = ref(false);
 const dialog = ref(false); // État pour le dialogue
 const backdropFilter = ref("grayscale(100%)");
+
+// État actif pour le lien sélectionné
+const activeLink = ref("Accueil"); // Par défaut, "Accueil" est actif
+
+// Fonction pour définir le lien actif
+const setActiveLink = (linkName) => {
+  activeLink.value = linkName;
+};
+
+// Fonction pour déterminer les classes des liens de navigation
+const linkClass = (linkName) => {
+  return activeLink.value === linkName
+    ? "text-xl font-bold ml-4 hover:text-white text-blue-500 underline"
+    : "text-xl font-bold ml-4 hover:text-white";
+};
 
 // Fonction pour basculer la visibilité du menu
 const toggleMenu = () => {
