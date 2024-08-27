@@ -182,13 +182,13 @@ const menuItems = [
 
 // États pour la visibilité du menu et le défilement
 const isScrolled = ref(false);
-const isMenuVisible = ref(true); // Définir sur `true` si vous voulez que le menu soit visible au démarrage
+const isMenuVisible = ref(true);
 const isMenuOpen = ref(false);
-const dialog = ref(false); // État pour le dialogue
+const dialog = ref(false);
 const backdropFilter = ref("grayscale(100%)");
 
 // État actif pour le lien sélectionné
-const activeLink = ref("Accueil"); // Par défaut, "Accueil" est actif
+const activeLink = ref("Accueil"); 
 
 // Fonction pour définir le lien actif
 const setActiveLink = (linkName) => {
