@@ -31,41 +31,15 @@
       </div>
     </div>
   </div>
-  <section class="rm-container section" id="annonces" data-aos="fade-up">
-    <div
-      class="rm-wrapper bg-sky-900 bg-opacity-10 border-r-2 border-l-2 border-sky-800 px-4 py-12"
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis
-      cum unde! Animi in saepe pariatur sint porro illum, sequi consectetur
-      sapiente necessitatibus mollitia qui. Vero voluptas id ipsum delectus!
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos id iusto
-      culpa ullam saepe quidem aperiam. Dolor ducimus, molestias nobis voluptas
-      autem ut recusandae, tempora, dolorum odit dolores et neque. Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Quas blanditiis cum unde!
-      Animi in saepe pariatur sint porro illum, sequi consectetur sapiente
-      necessitatibus mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum,
-      dolor sit amet consectetur adipisicing elit. Eos id iusto culpa ullam
-      saepe quidem aperiam. Dolor ducimus, molestias nobis voluptas autem ut
-      recusandae, tempora, dolorum odit dolores et neque. Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Quas blanditiis cum unde! Animi in
-      saepe pariatur sint porro illum, sequi consectetur sapiente necessitatibus
-      mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum, dolor sit amet
-      consectetur adipisicing elit. Eos id iusto culpa ullam saepe quidem
-      aperiam. Dolor ducimus, molestias nobis voluptas autem ut recusandae,
-      tempora, dolorum odit dolores et neque. Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Quas blanditiis cum unde! Animi in saepe
-      pariatur sint porro illum, sequi consectetur sapiente necessitatibus
-      mollitia qui. Vero voluptas id ipsum delectus! Lorem ipsum, dolor sit amet
-      consectetur adipisicing elit. Eos id iusto culpa ullam saepe quidem
-      aperiam. Dolor ducimus, molestias nobis voluptas autem ut recusandae,
-      tempora, dolorum odit dolores et neque.
-    </div>
-  </section>
+  <div class="rm-wrapper">
+    <AboutSection />
+  </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
 import NavBar from "src/components/NavBar.vue";
+import AboutSection from "src/components/AboutSection.vue";
 
 // Array of titles for rotation
 const mainTitles = ref([

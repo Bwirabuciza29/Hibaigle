@@ -8,10 +8,10 @@
 @tailwind components;
 @tailwind utilities;
 .rm-wrapper {
-  @apply flex justify-center items-center relative;
+  @apply flex justify-start items-center space-x-4 relative;
 }
 .rm-container {
-  @apply max-w-7xl mx-auto px-6 sm:px-2 w-full;
+  @apply max-w-6xl mx-auto px-6 sm:px-2 w-full;
 }
 .rm-btn {
   @apply px-5 py-2;
