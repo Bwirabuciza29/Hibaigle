@@ -1,34 +1,44 @@
 <template>
   <nav
-    id="header"
+    id="accueil"
     class="fixed w-full z-30 top-0 text-white"
     :class="{ 'bg-white shadow': isScrolled }"
   >
     <div
       class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
     >
+      <!-- image du background -->
       <div class="pl-4 flex items-center">
         <q-img class="w-20 my-2" src="~assets/logo.png" />
       </div>
+      <!-- Navbar links -->
       <div class="gt-sm">
         <ul
-          class="flex items-center gap-4 font-semibold transition-colors duration-300 ease-in-out"
+          class="flex items-center gap-2 font-semibold transition-colors duration-300 ease-in-out text-sm"
           :class="{ 'text-black': isScrolled }"
         >
           <li v-for="item in menuItems" :key="item.name">
             <a
-              href="#"
-              class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900"
+              :href="'#' + item.name.toLowerCase()"
+              :class="linkClass(item.name)"
+              class="relative group transition-colors duration-300 ease-in-out hover:text-sky-900 text-sm"
+              @click.prevent="
+                () => {
+                  scrollToSection(item.name.toLowerCase());
+                  setActiveLink(item.name);
+                }
+              "
             >
               {{ item.name }}
               <span
-                class="absolute left-0 bottom-0 w-full h-[2px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                class="absolute left-0 bottom-0 w-full h-[1px] bg-sky-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
               ></span>
             </a>
           </li>
         </ul>
       </div>
-
+      <!-- Fin Navbar links -->
+      <!-- Les boutons left du Navbar -->
       <div class="gt-sm gap-1">
         <q-btn
           :class="{ 'text-black': isScrolled }"
@@ -50,6 +60,8 @@
           ></div>
         </button>
       </div>
+      <!-- fin bouton -->
+      <!-- Le menu toggle -->
       <div class="lt-md px-2 py-2 bg-sky-900 bg-opacity-20 mr-4">
         <q-btn
           flat
@@ -63,7 +75,8 @@
         />
       </div>
     </div>
-    <!-- Dialogue -->
+    <!-- end -->
+    <!-- Dialogue  pour la navigation mobile-->
     <q-dialog v-model="dialog" full-width :backdrop-filter="backdropFilter">
       <div
         class="blur-background w-full bg-sky-900 bg-opacity-70 text-white border border-gray-400"
@@ -94,9 +107,14 @@
                 v-for="item in menuItems"
                 :key="item.name"
                 :class="linkClass(item.name)"
-                @click="setActiveLink(item.name)"
-                href="#"
+                @click.prevent="
+                  () => {
+                    scrollToSection(item.name.toLowerCase());
+                    setActiveLink(item.name);
+                  }
+                "
                 class="text-xl font-bold ml-4 hover:text-white"
+                href="#"
               >
                 {{ item.name }}
               </a>
@@ -169,8 +187,8 @@
 </template>
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import VueScrollTo from "vue-scrollto";
 
-// Liste des éléments de menu
 const menuItems = [
   { name: "Accueil" },
   { name: "Annonces" },
@@ -180,15 +198,14 @@ const menuItems = [
   { name: "Contact" },
 ];
 
-// États pour la visibilité du menu et le défilement
 const isScrolled = ref(false);
 const isMenuVisible = ref(true);
 const isMenuOpen = ref(false);
 const dialog = ref(false);
 const backdropFilter = ref("grayscale(100%)");
 
-// État actif pour le lien sélectionné
-const activeLink = ref("Accueil"); 
+// État pour le lien actif
+const activeLink = ref("Accueil");
 
 // Fonction pour définir le lien actif
 const setActiveLink = (linkName) => {
@@ -198,27 +215,27 @@ const setActiveLink = (linkName) => {
 // Fonction pour déterminer les classes des liens de navigation
 const linkClass = (linkName) => {
   return activeLink.value === linkName
-    ? "text-xl font-bold ml-4 hover:text-white text-blue-500 underline"
-    : "text-xl font-bold ml-4 hover:text-white";
+    ? "text-sm font-bold ml-4 hover:text-white text-blue-500 underline"
+    : "text-sm font-bold ml-4 hover:text-white";
 };
 
-// Fonction pour basculer la visibilité du menu
 const toggleMenu = () => {
   isMenuVisible.value = !isMenuVisible.value;
 };
 
-// Fonction pour basculer l'état ouvert du menu
 const toggleMenus = () => {
   isMenuOpen.value = !isMenuOpen.value;
   dialog.value = !dialog.value;
 };
 
-// Fonction pour gérer le défilement
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 10;
 };
 
-// Ajouter et supprimer les gestionnaires d'événements de défilement
+const scrollToSection = (sectionId) => {
+  VueScrollTo.scrollTo(`#${sectionId}`, 500, { easing: "ease-in-out" });
+};
+
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
