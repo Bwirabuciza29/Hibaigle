@@ -34,12 +34,16 @@
   <div class="rm-wrapper">
     <AboutSection />
   </div>
+  <div class="rm-wrapper bg-slate-950">
+    <MethodSection />
+  </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
 import NavBar from "src/components/NavBar.vue";
 import AboutSection from "src/components/AboutSection.vue";
+import MethodSection from "src/components/MethodSection.vue";
 
 // Array of titles for rotation
 const mainTitles = ref([

@@ -1,5 +1,5 @@
 <template>
-  <section class="rm-container section" id="annonces" data-aos="fade-up">
+  <section class="rm-container section" id="about" data-aos="fade-up">
     <img
       src="~assets/shape.png"
       alt="Filigrane"
@@ -37,31 +37,36 @@
 
           <!-- Voir Plus Button -->
           <div class="text-center mb-10">
-            <div class="relative inline-flex items-center">
+            <div
+              @click="$route.push('/About')"
+              class="relative inline-flex items-center"
+            >
               <!-- Forme ronde -->
               <span
                 class="absolute left-20 -top-5 w-16 h-16 bg-sky-200 rounded-full opacity-30 animate-pulse z-0"
               ></span>
               <!-- Bouton -->
-              <button
-                class="relative inline-flex items-center text-sky-900 hover:text-gray-500 font-semibold text-lg transition-all duration-500 ease-in-out z-10"
-              >
-                Voir plus
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 ml-2 transition-transform duration-500 ease-in-out transform hover:translate-x-1"
+              <router-link to="about">
+                <button
+                  class="relative inline-flex items-center text-sky-900 hover:text-gray-500 font-semibold text-lg transition-all duration-500 ease-in-out z-10"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
+                  Voir plus
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5 ml-2 transition-transform duration-500 ease-in-out transform hover:translate-x-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </button>
+              </router-link>
             </div>
           </div>
         </div>

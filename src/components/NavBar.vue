@@ -195,8 +195,8 @@ import VueScrollTo from "vue-scrollto";
 
 const menuItems = [
   { name: "Accueil" },
+  { name: "About" },
   { name: "Annonces" },
-  { name: "A Propos" },
   { name: "Services" },
   { name: "Equipe" },
   { name: "Contact" },
