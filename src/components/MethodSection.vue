@@ -57,8 +57,13 @@
           class="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4"
         >
           <div
-            class="col-span-1 bg-yellow-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-yellow-200"
+            class="col-span-1 bg-yellow-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-yellow-200 relative"
           >
+            <img
+              src="~assets/communication.svg"
+              alt="Watermark"
+              class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
+            />
             <div class="text-yellow-500 font-bold uppercase text-xs mb-2">
               Communication
             </div>
@@ -71,6 +76,11 @@
           <div
             class="col-span-1 bg-red-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-red-200 relative"
           >
+            <img
+              src="~assets/coding.svg"
+              alt="Watermark"
+              class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
+            />
             <div class="text-red-500 font-bold uppercase text-xs mb-2">
               Développement
             </div>
@@ -89,8 +99,13 @@
 
           <!-- Additional Right Cards -->
           <div
-            class="col-span-1 bg-green-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-green-200"
+            class="col-span-1 bg-green-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-green-200 relative"
           >
+            <img
+              src="~assets/motivation.svg"
+              alt="Watermark"
+              class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
+            />
             <div class="text-green-500 font-bold uppercase text-xs mb-2">
               Motivation
             </div>
@@ -101,8 +116,13 @@
           </div>
 
           <div
-            class="col-span-1 bg-purple-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-purple-200"
+            class="col-span-1 bg-purple-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-purple-200 relative"
           >
+            <img
+              src="~assets/security.svg"
+              alt="Watermark"
+              class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
+            />
             <div class="text-purple-500 font-bold uppercase text-xs mb-2">
               Sécurité
             </div>

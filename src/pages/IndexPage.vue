@@ -76,15 +76,15 @@ let currentIndex = 0;
 
 // Function to update titles with fade-in effect
 const updateTitles = () => {
-  fadeClass.value = "opacity-0"; // Commence par une disparition (fade out)
+  fadeClass.value = "opacity-0";
 
   setTimeout(() => {
     // Met à jour les titres après que l'effet fade out soit terminé
     currentIndex = (currentIndex + 1) % mainTitles.value.length;
     currentMainTitle.value = mainTitles.value[currentIndex];
     currentSubTitle.value = subTitles.value[currentIndex];
-    fadeClass.value = "opacity-100"; // Applique l'effet d'apparition (fade in)
-  }, 1000); // Ce délai doit correspondre à la durée de transition
+    fadeClass.value = "opacity-100";
+  }, 1000);
 };
 
 onMounted(() => {
