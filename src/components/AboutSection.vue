@@ -9,7 +9,7 @@
       class="bg-sky-500 bg-opacity-5 border-r border-l border-gray-400 px-4 py-12"
     >
       <h2
-        class="text-4xl text-sky-900 font-semibold mb-6 text-center relative transition-all duration-500 ease-in-out transform hover:text-sky-700 hover:scale-105 hover:-translate-y-1"
+        class="text-4xl text-sky-900 font-bold mb-6 text-center relative transition-all duration-500 ease-in-out transform hover:text-sky-700 hover:scale-105 hover:-translate-y-1"
         @mouseover="hovered = true"
         @mouseleave="hovered = false"
       >
