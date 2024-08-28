@@ -1,11 +1,16 @@
 <template>
-  <section class="rm-container mt-8 section" id="annonces" data-aos="fade-up">
+  <section
+    class="rm-container section relative"
+    id="annonces"
+    data-aos="fade-up"
+  >
     <img
-      src="~assets/Vector.png"
-      alt="Filigrane"
-      class="absolute top-0 right-2 w-32 h-auto opacity-100"
+      src="~assets/bg.svg"
+      alt="filigrane"
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full md:w-3/4 opacity-10 pointer-events-none"
     />
-    <div class="bg-opacity-5 px-4 py-12">
+
+    <div class="relative bg-opacity-5 px-4 py-12">
       <h2
         class="text-4xl text-white font-bold mb-6 text-center relative transition-all duration-500 ease-in-out transform hover:text-sky-700 hover:scale-105 hover:-translate-y-1"
         @mouseover="hovered = true"
@@ -16,9 +21,27 @@
         >
         Services
       </h2>
+      <p
+        class="text-lg font-semibold text-gray-500 text-center hover:text-white pb-4"
+      >
+        Nos services sont accessibles à tous et compatible aux besoins
+        numériques
+      </p>
+      <p class="text-white text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe quo
+        magni magnam alias eum exercitationem suscipit! Nulla animi ullam et
+        veritatis quo, explicabo corrupti ut incidunt ipsa quisquam quas. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Natus saepe quo magni
+        magnam alias eum exercitationem suscipit! Nulla animi ullam et veritatis
+        quo, explicabo corrupti ut incidunt ipsa quisquam quas.Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Natus saepe quo magni magnam
+        alias eum exercitationem suscipit! Nulla animi ullam et veritatis quo,
+        explicabo corrupti ut incidunt ipsa quisquam quas.
+      </p>
     </div>
   </section>
-</template><script setup>
+</template>
+<script setup>
 import { ref } from "vue";
 
 const hovered = ref(false);
