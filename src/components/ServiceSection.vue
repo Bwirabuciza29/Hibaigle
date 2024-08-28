@@ -18,4 +18,8 @@
       </h2>
     </div>
   </section>
-</template>
+</template><script setup>
+import { ref } from "vue";
+
+const hovered = ref(false);
+</script>
