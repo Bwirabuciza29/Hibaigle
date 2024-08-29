@@ -37,7 +37,7 @@
     </div>
     <div
       class="rm-wrapper"
-      style="background-image: url('/src/assets/bg-16.svg')"
+      style="background-image: url('/src/assets/bg-16.jpg')"
     >
       <MethodSection />
     </div>
