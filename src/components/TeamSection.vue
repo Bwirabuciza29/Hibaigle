@@ -13,67 +13,46 @@
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-4 my-8">
         <div
+          v-for="card in cardData"
+          :key="card.name"
           class="bg-gray-100 hover:bg-white hover:border-sky-900 hover:border-2 rounded-lg p-6"
         >
           <div class="flex items-center justify-between">
             <img
-              src="~assets/avatar4.jpg"
-              alt="Sam Monic"
+              :src="card.image"
+              :alt="card.alt"
               class="rounded-lg w-16 h-16"
             />
             <div class="flex items-center">
-              <a href="#" class="text-gray-400 hover:text-black mx-2"
-                ><i class="fa-brands fa-x-twitter text-2xl"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-gray-700 mx-2"
-                ><i class="fa-brands fa-github text-2xl"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-sky-700 mx-2"
-                ><i class="fa-brands fa-linkedin text-2xl"></i
-              ></a>
+              <a
+                :href="card.links.twitter"
+                class="text-gray-400 hover:text-black mx-2"
+              >
+                <i class="fa-brands fa-x-twitter text-2xl"></i>
+              </a>
+              <a
+                :href="card.links.github"
+                class="text-gray-400 hover:text-gray-700 mx-2"
+              >
+                <i class="fa-brands fa-github text-2xl"></i>
+              </a>
+              <a
+                :href="card.links.linkedin"
+                class="text-gray-400 hover:text-sky-700 mx-2"
+              >
+                <i class="fa-brands fa-linkedin text-2xl"></i>
+              </a>
             </div>
           </div>
           <div class="flex items-center justify-between mt-4">
             <div>
               <h3 class="text-lg font-semibold">
-                <span>Ayane OSEE</span> |
-                <span class="text-gray-400">CEO</span>
+                <span>{{ card.name }}</span> |
+                <span class="text-gray-400">{{ card.title }}</span>
               </h3>
             </div>
           </div>
-          <p class="text-gray-500">Directeur Général</p>
-        </div>
-
-        <div
-          class="bg-gray-100 hover:bg-white hover:border-sky-900 hover:border-2 rounded-lg p-6"
-        >
-          <div class="flex items-center justify-between">
-            <img
-              src="~assets/avatar4.jpg"
-              alt="Sam Monic"
-              class="rounded-lg w-16 h-16"
-            />
-            <div class="flex items-center">
-              <a href="#" class="text-gray-400 hover:text-black mx-2"
-                ><i class="fa-brands fa-x-twitter text-2xl"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-gray-700 mx-2"
-                ><i class="fa-brands fa-github text-2xl"></i
-              ></a>
-              <a href="#" class="text-gray-400 hover:text-sky-700 mx-2"
-                ><i class="fa-brands fa-linkedin text-2xl"></i
-              ></a>
-            </div>
-          </div>
-          <div class="flex items-center justify-between mt-4">
-            <div>
-              <h3 class="text-lg font-semibold">
-                <span>Ayane OSEE</span> |
-                <span class="text-gray-400">CEO</span>
-              </h3>
-            </div>
-          </div>
-          <p class="text-gray-500">Directeur Général</p>
+          <p class="text-gray-500">{{ card.description }}</p>
         </div>
         <!-- End Deuxieme Carnd -->
       </div>
@@ -81,8 +60,26 @@
   </section>
 </template>
 
+
 <script setup>
 import { ref } from "vue";
 
 const hovered = ref(false);
+
+// Card data
+const cardData = ref([
+  {
+    image: "/src/assets/avatar6.jpg",
+    alt: "Sam Monic",
+    name: "Ayane OSEE",
+    title: "CEO",
+    description: "Directeur Général",
+    links: {
+      twitter: "#",
+      github: "#",
+      linkedin: "#",
+    },
+  },
+  // Autres Cards
+]);
 </script>
