@@ -44,6 +44,9 @@
     <div class="rm-wrapper bg-sky-950">
       <ServiceSection />
     </div>
+    <div class="rm-wrapper bg-white">
+      <TeamSection />
+    </div>
   </div>
 </template>
 
@@ -53,6 +56,7 @@ import NavBar from "src/components/NavBar.vue";
 import AboutSection from "src/components/AboutSection.vue";
 import MethodSection from "src/components/MethodSection.vue";
 import ServiceSection from "src/components/ServiceSection.vue";
+import TeamSection from "src/components/TeamSection.vue";
 
 // Array of titles for rotation
 const mainTitles = ref([

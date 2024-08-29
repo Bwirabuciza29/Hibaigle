@@ -8,7 +8,7 @@
       <div
         class="w-full rm-container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
       >
-        <!-- image du background -->
+        <!-- image logo -->
         <div class="pl-4 flex items-center">
           <q-img class="w-20 my-2" src="~assets/logo.png" />
         </div>
@@ -41,14 +41,6 @@
         <!-- Fin Navbar links -->
         <!-- Les boutons left du Navbar -->
         <div class="gt-sm gap-1">
-          <q-btn
-            :class="{ 'text-sky-900': isScrolled }"
-            class="q-mr-xs q-py-xs q-px-sm text-white transition-transform duration-200 ease-in-out transform active:scale-90"
-            flat
-            @click="$q.dark.toggle()"
-            color="white"
-            :icon="$q.dark.isActive ? 'nights_stay' : 'wb_sunny'"
-          />
           <button
             class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
           >
