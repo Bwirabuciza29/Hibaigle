@@ -1,5 +1,5 @@
 <template>
-  <section class="rm-container section" id="about" data-aos="fade-up">
+  <section class="rm-container section" id="about">
     <img
       src="~assets/shape.png"
       alt="Filigrane"
@@ -24,10 +24,7 @@
         </span>
         <div>
           <!-- Text Paragraph -->
-          <p
-            class="text-pretty text-gray-700 mb-6 text-center"
-            data-aos="fade-down"
-          >
+          <p class="text-pretty text-gray-700 mb-6 text-center">
             Nous sommes une Société par Action simplifié de droit congolais,
             basée à Goma. Centrée sur les numériques, la société hibaigle
             propose différents services dont le développement des logiciels,
@@ -37,16 +34,13 @@
 
           <!-- Voir Plus Button -->
           <div class="text-center mb-10">
-            <div
-              @click="$route.push('/About')"
-              class="relative inline-flex items-center"
-            >
+            <div class="relative inline-flex items-center">
               <!-- Forme ronde -->
               <span
                 class="absolute left-20 -top-5 w-16 h-16 bg-sky-200 rounded-full opacity-30 animate-pulse z-0"
               ></span>
               <!-- Bouton -->
-              <router-link to="about">
+              <router-link to="/about">
                 <button
                   class="relative inline-flex items-center text-sky-900 hover:text-gray-500 font-semibold text-lg transition-all duration-500 ease-in-out z-10"
                 >

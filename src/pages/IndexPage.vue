@@ -1,47 +1,49 @@
 <template>
-  <!-- Navbar -->
-  <NavBar />
-  <!-- Image de fond -->
-  <div class="background-image h-screen flex items-center justify-center">
-    <div class="flex flex-col items-center justify-center">
-      <div class="text-center">
-        <h1
-          class="text-white text-4xl md:text-5xl font-bold mb-4 transition-opacity duration-1000 ease-in-out"
-          :class="fadeClass"
-        >
-          {{ currentMainTitle }}
-        </h1>
-        <h2
-          class="text-yellow-400 text-2xl md:text-3xl mb-6 transition-opacity duration-1000 ease-in-out"
-          :class="fadeClass"
-        >
-          {{ currentSubTitle }}
-        </h2>
-        <button
-          class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
-        >
-          <span
-            class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
-            >Ce que nous vous offrons...</span
+  <div>
+    <!-- Navbar -->
+    <NavBar />
+    <!-- Image de fond -->
+    <div class="background-image h-screen flex items-center justify-center">
+      <div class="flex flex-col items-center justify-center">
+        <div class="text-center">
+          <h1
+            class="text-white text-4xl md:text-5xl font-bold mb-4 transition-opacity duration-1000 ease-in-out"
+            :class="fadeClass"
           >
-          <div
-            class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
-          ></div>
-        </button>
+            {{ currentMainTitle }}
+          </h1>
+          <h2
+            class="text-yellow-400 text-2xl md:text-3xl mb-6 transition-opacity duration-1000 ease-in-out"
+            :class="fadeClass"
+          >
+            {{ currentSubTitle }}
+          </h2>
+          <button
+            class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
+          >
+            <span
+              class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
+              >Ce que nous vous offrons...</span
+            >
+            <div
+              class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+            ></div>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="rm-wrapper">
-    <AboutSection />
-  </div>
-  <div
-    class="rm-wrapper"
-    style="background-image: url('/src/assets/bg-16.svg')"
-  >
-    <MethodSection />
-  </div>
-  <div class="rm-wrapper bg-sky-950">
-    <ServiceSection />
+    <div class="rm-wrapper">
+      <AboutSection />
+    </div>
+    <div
+      class="rm-wrapper"
+      style="background-image: url('/src/assets/bg-16.svg')"
+    >
+      <MethodSection />
+    </div>
+    <div class="rm-wrapper bg-sky-950">
+      <ServiceSection />
+    </div>
   </div>
 </template>
 
