@@ -4,7 +4,6 @@
       <q-page-container>
         <router-view v-slot="{ Component }">
           <transition name="route" mode="out-in">
-            <!-- Remove v-if or v-show and rely on Quasar's transition system -->
             <component :is="Component" />
           </transition>
         </router-view>
@@ -20,9 +19,9 @@ import "aos/dist/aos.css";
 
 onMounted(() => {
   AOS.init({
-    duration: 300,
+    duration: 200,
     offset: 100,
-    easing: "ease-in-out",
+    easing: "fade",
   });
 });
 </script>
@@ -39,6 +38,6 @@ onMounted(() => {
   transform: translateX(-100px);
 }
 .route-leave-active {
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 </style>
