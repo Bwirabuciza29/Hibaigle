@@ -16,7 +16,7 @@
         <div class="gt-sm">
           <ul
             class="flex items-center gap-2 font-semibold transition-colors duration-300 ease-in-out text-sm"
-            :class="{ 'text-black': isScrolled }"
+            :class="{ 'text-sky-900': isScrolled }"
           >
             <li v-for="item in menuItems" :key="item.name">
               <a
@@ -42,7 +42,7 @@
         <!-- Les boutons left du Navbar -->
         <div class="gt-sm gap-1">
           <q-btn
-            :class="{ 'text-black': isScrolled }"
+            :class="{ 'text-sky-900': isScrolled }"
             class="q-mr-xs q-py-xs q-px-sm text-white transition-transform duration-200 ease-in-out transform active:scale-90"
             flat
             @click="$q.dark.toggle()"
@@ -167,7 +167,7 @@
                 <a
                   href="https://www.linkedin.com"
                   target="_blank"
-                  class="text-blue-500 hover:text-blue-700"
+                  class="text-sky-500 hover:text-sky-700"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

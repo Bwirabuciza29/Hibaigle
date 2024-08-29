@@ -1,13 +1,13 @@
 <template>
   <section
     class="rm-container section relative"
-    id="annonces"
+    id="services"
     data-aos="fade-up"
   >
     <img
       src="~assets/bg.svg"
       alt="filigrane"
-      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full md:w-3/4 opacity-10 pointer-events-none"
+      class="absolute top-1/2 left-3/4 transform -translate-x-3/4 -translate-y-3/4 w-full md:w-3/4 opacity-10 pointer-events-none"
     />
 
     <div class="relative bg-opacity-5 px-4 py-12">
@@ -21,9 +21,7 @@
         >
         Services
       </h2>
-      <p
-        class="text-lg font-semibold text-gray-500 text-center hover:text-white pb-4"
-      >
+      <p class="font-semibold text-gray-500 text-center hover:text-white pb-4">
         Nos services sont accessibles à tous et compatible aux besoins
         numériques
       </p>

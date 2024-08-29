@@ -34,7 +34,7 @@
                 </div>
               </div>
               <br /><br />
-              <div class="text-center mt-12">
+              <div class="text-center mt-12" data-aos="fade-up">
                 <h3
                   class="text-4xl font-semibold leading-normal text-gray-800 mb-2"
                 >
@@ -48,7 +48,7 @@
               </div>
               <div class="mt-5 py-5 border-t border-gray-300 text-center">
                 <div class="flex flex-wrap justify-center">
-                  <div class="w-full lg:w-9/12 px-4">
+                  <div class="w-full lg:w-9/12 px-4" data-aos="fade-up">
                     <p
                       class="mb-2 text-sm leading-relaxed text-justify text-gray-700"
                     >

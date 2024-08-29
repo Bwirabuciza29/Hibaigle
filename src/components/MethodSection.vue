@@ -1,10 +1,5 @@
 <template>
   <section class="rm-container section" id="services" data-aos="fade-up">
-    <!-- <img
-      src="~assets/Other.png"
-      alt="Filigrane"
-      class="absolute top-0 right-2 w-40 h-auto opacity-100"
-    /> -->
     <div class="bg-sky-white bg-opacity-5 border-r border-l border-gray-400">
       <h2
         class="text-4xl text-sky-900 font-bold mb-6 text-center relative transition-all duration-500 ease-in-out transform hover:text-sky-700 hover:scale-105 hover:-translate-y-1"
@@ -19,16 +14,16 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-8 relative">
         <!-- Large Card on the Left -->
         <div
-          class="col-span-1 md:col-span-2 bg-blue-900 text-white rounded-xl p-8 relative bg-cover bg-center transition-transform transform hover:scale-105"
+          class="col-span-1 md:col-span-2 bg-sky-900 text-white rounded-xl p-8 relative bg-cover bg-center"
           style="background-image: url('/src/assets/met.jpg')"
         >
           <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-900 to-transparent opacity-80 rounded-xl"
+            class="absolute inset-0 bg-gradient-to-r from-sky-900 to-transparent opacity-80 rounded-xl"
           ></div>
           <div class="relative z-10">
             <span class="block text-sm uppercase">Notre Méthodologie</span>
             <h2
-              class="text-2xl pt-12 font-bold my-4 transition-transform transform hover:scale-110"
+              class="text-2xl text-white pt-12 font-semibold my-4 transition-transform transform hover:scale-90"
             >
               Nos solutions sont conçues dans le but d'offrir aux utilisateurs
               une expérience unique et une grande facilité dans l'utilisation.
@@ -38,15 +33,9 @@
             >
               <a
                 href="#"
-                class="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-blue-700 hover:to-blue-900"
+                class="bg-sky-700 hover:bg-sky-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-sky-700 hover:to-sky-900"
               >
                 Nos projets <span aria-hidden="true">→</span>
-              </a>
-              <a
-                href="#"
-                class="bg-white text-blue-700 hover:bg-gray-100 py-2 px-4 rounded-lg transition-colors duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-white hover:to-gray-300 hover:text-blue-900"
-              >
-                Notre expertise <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
@@ -59,11 +48,11 @@
           <div
             class="col-span-1 bg-yellow-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-yellow-200 relative"
           >
-            <img
+            <!-- <img
               src="~assets/communication.svg"
               alt="Watermark"
               class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
-            />
+            /> -->
             <div class="text-yellow-500 font-bold uppercase text-xs mb-2">
               Communication
             </div>
@@ -76,11 +65,11 @@
           <div
             class="col-span-1 bg-red-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-red-200 relative"
           >
-            <img
+            <!-- <img
               src="~assets/coding.svg"
               alt="Watermark"
               class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
-            />
+            /> -->
             <div class="text-red-500 font-bold uppercase text-xs mb-2">
               Développement
             </div>
@@ -97,15 +86,14 @@
             />
           </div>
 
-          <!-- Additional Right Cards -->
           <div
             class="col-span-1 bg-green-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-green-200 relative"
           >
-            <img
+            <!-- <img
               src="~assets/motivation.svg"
               alt="Watermark"
               class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
-            />
+            /> -->
             <div class="text-green-500 font-bold uppercase text-xs mb-2">
               Motivation
             </div>
@@ -118,11 +106,11 @@
           <div
             class="col-span-1 bg-purple-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-purple-200 relative"
           >
-            <img
+            <!-- <img
               src="~assets/security.svg"
               alt="Watermark"
               class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
-            />
+            /> -->
             <div class="text-purple-500 font-bold uppercase text-xs mb-2">
               Sécurité
             </div>
