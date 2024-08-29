@@ -73,7 +73,7 @@ const cardData = ref([
     alt: "Sam Monic",
     name: "Ayane OSEE",
     title: "CEO",
-    description: "Directeur Général",
+    description: "Alumni One",
     links: {
       twitter: "#",
       github: "#",
