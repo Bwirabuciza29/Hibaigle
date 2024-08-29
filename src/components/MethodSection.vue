@@ -33,7 +33,7 @@
             >
               <a
                 href="#"
-                class="bg-sky-700 hover:bg-sky-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-sky-700 hover:to-sky-900"
+                class="relative bg-sky-700 hover:bg-sky-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-sky-700 hover:to-sky-900 flex items-center justify-center"
               >
                 Nos projets <span aria-hidden="true">→</span>
               </a>
