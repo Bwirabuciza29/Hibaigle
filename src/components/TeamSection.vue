@@ -11,11 +11,11 @@
         >
         Equipe
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 py-4 my-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 py-8 mt-8">
         <div
           v-for="card in cardData"
           :key="card.name"
-          class="bg-gray-100 hover:bg-white hover:border-sky-900 hover:border-2 rounded-lg p-6"
+          class="bg-sky-50 hover:bg-white hover:border-sky-200 hover:border-2 rounded-lg p-6"
         >
           <div class="flex items-center justify-between">
             <img
@@ -47,7 +47,7 @@
           <div class="flex items-center justify-between mt-4">
             <div>
               <h3 class="text-lg font-semibold">
-                <span>{{ card.name }}</span> |
+                <span class="text-sky-900">{{ card.name }}</span> |
                 <span class="text-gray-400">{{ card.title }}</span>
               </h3>
             </div>
