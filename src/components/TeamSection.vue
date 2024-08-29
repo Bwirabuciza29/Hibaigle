@@ -1,6 +1,6 @@
 <template>
   <section class="rm-container section" id="equipe" data-aos="fade-up">
-    <div class="bg-sky-white bg-opacity-5 border-r border-l border-gray-400">
+    <div class="bg-white bg-opacity-5 border-r border-l border-gray-400">
       <h2
         class="text-4xl text-sky-900 font-bold mb-6 text-center relative transition-all duration-500 ease-in-out transform hover:text-sky-700 hover:scale-105 hover:-translate-y-1"
         @mouseover="hovered = true"
@@ -11,7 +11,7 @@
         >
         Equipe
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-4 my-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 py-4 my-8">
         <div
           v-for="card in cardData"
           :key="card.name"
@@ -69,15 +69,52 @@ const hovered = ref(false);
 // Card data
 const cardData = ref([
   {
-    image: "/src/assets/avatar6.jpg",
-    alt: "Sam Monic",
+    image: "/src/assets/avatar3.jpg",
+    alt: "Ayane OSEE",
     name: "Ayane OSEE",
     title: "CEO",
-    description: "Alumni One",
+    description: "Data manager",
+    links: {
+      twitter: "https://x.com/OBooye",
+      github: "https://github.com/oseeayan",
+      linkedin: "http://www.linkedin.com/in/oseeayan",
+    },
+  },
+  {
+    image: "/src/assets/avatar6.jpg",
+    alt: "Bwirabuciza",
+    name: "BWIRABUCIZA",
+    title: "CTO",
+    description: "Dev UI&UX",
+    links: {
+      twitter: "https://x.com/achille_blondy",
+      github: "https://github.com/Bwirabuciza29",
+      linkedin: "https://www.linkedin.com/in/bwirabuciza-blondy-58b137245/",
+    },
+  },
+  {
+    image: "/src/assets/avatar5.jpg",
+    alt: "Florence",
+    name: "Linda WAZA",
+    title: "CCO",
+    description: "Data analyst",
     links: {
       twitter: "#",
       github: "#",
       linkedin: "#",
+    },
+  },
+  {
+    image: "/src/assets/avatar2.jpg",
+    alt: "Ringo",
+    name: "Riguen KATEKA",
+    title: "CFO",
+    description: "Accountant",
+    links: {
+      twitter: "#",
+      github: "#",
+      linkedin:
+        "https://www.linkedin.com/in/riguen-kateka-1381112b7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   },
   // Autres Cards

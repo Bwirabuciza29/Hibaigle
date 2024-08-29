@@ -10,7 +10,7 @@
       >
         <!-- image logo -->
         <div class="pl-4 flex items-center">
-          <q-img class="w-20 my-2" src="~assets/logo.png" />
+          <q-img class="w-20 my-2" src="~assets/hib.png" />
         </div>
         <!-- Navbar links -->
         <div class="gt-sm">
