@@ -3,7 +3,7 @@
     <img
       src="~assets/shape.png"
       alt="Filigrane"
-      class="absolute top-0 right-2 w-32 h-auto opacity-100"
+      class="absolute top-2 right-2 sm:top-4 sm:right-4 md:top-6 md:right-6 w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-100"
     />
     <div
       class="bg-sky-500 bg-opacity-5 border-r border-l border-gray-400 px-4 py-12"
@@ -18,7 +18,7 @@
       <div class="relative rm-wrapper">
         <!-- Heading -->
         <span
-          class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold text-gray-500 opacity-10 z-0"
+          class="absolute top-1/4 sm:top-1/3 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] font-bold text-gray-500 opacity-10 z-0"
         >
           hibaigle
         </span>

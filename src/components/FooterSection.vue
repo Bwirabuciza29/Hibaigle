@@ -12,7 +12,7 @@
           <div class="relative rm-wrapper">
             <!-- Heading -->
             <span
-              class="absolute top-20 left-60 transform -translate-x-1/2 -translate-y-1/2 text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] font-bold text-gray-500 opacity-10 z-0"
+              class="absolute top-20 sm:top-24 md:top-28 lg:top-32 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] font-bold text-gray-500 opacity-10 z-0"
             >
               hibaigle
             </span>

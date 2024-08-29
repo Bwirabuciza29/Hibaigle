@@ -7,13 +7,13 @@
       <div class="flex flex-col items-center justify-center">
         <div class="text-center">
           <h1
-            class="text-white text-4xl md:text-5xl font-bold mb-4 transition-opacity duration-1000 ease-in-out"
+            class="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 transition-opacity duration-1000 ease-in-out"
             :class="fadeClass"
           >
             {{ currentMainTitle }}
           </h1>
           <h2
-            class="text-yellow-400 text-2xl md:text-3xl mb-6 transition-opacity duration-1000 ease-in-out"
+            class="text-yellow-400 text-xl sm:text-2xl md:text-3xl mb-4 sm:mb-6 transition-opacity duration-1000 ease-in-out"
             :class="fadeClass"
           >
             {{ currentSubTitle }}

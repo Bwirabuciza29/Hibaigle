@@ -23,7 +23,7 @@
           <div class="relative z-10">
             <span class="block text-sm uppercase">Notre Méthodologie</span>
             <h2
-              class="text-2xl text-white pt-12 font-semibold my-4 transition-transform transform hover:scale-90"
+              class="text-xl sm:text-2xl text-white pt-8 sm:pt-12 font-semibold my-2 sm:my-4 transition-transform transform hover:scale-90"
             >
               Nos solutions sont conçues dans le but d'offrir aux utilisateurs
               une expérience unique et une grande facilité dans l'utilisation.
