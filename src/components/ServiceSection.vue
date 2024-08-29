@@ -32,16 +32,6 @@
           alt="Filigrane"
           class="absolute -top-4 -left-24 w-64 h-68 opacity-90 overflow-hidden"
         />
-        <img
-          src="~assets/Ellipse.png"
-          alt="Filigrane droite"
-          class="absolute bottom-0 -right-16 w-32 h-32 opacity-5"
-        />
-        <!-- <img
-          src="~assets/Other.png"
-          alt="Filigrane centre"
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 opacity-100 z-20"
-        /> -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 relative z-10">
           <div
             v-for="(card, index) in cards"
