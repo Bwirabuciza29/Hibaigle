@@ -20,8 +20,6 @@ import "aos/dist/aos.css";
 onMounted(() => {
   AOS.init({
     duration: 200,
-    offset: 100,
-    easing: "fade",
   });
 });
 </script>
