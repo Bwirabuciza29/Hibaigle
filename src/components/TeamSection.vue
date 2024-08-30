@@ -99,9 +99,10 @@ const cardData = ref([
     title: "CCO",
     description: "Data analyst",
     links: {
-      twitter: "#",
+      twitter: "https://x.com/lindafoibe07/status/1668493930734731264?s=46",
       github: "#",
-      linkedin: "#",
+      linkedin:
+        "https://www.linkedin.com/in/linda-foibe-68a5a1278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
   },
   {
@@ -111,7 +112,7 @@ const cardData = ref([
     title: "CFO",
     description: "Accountant",
     links: {
-      twitter: "#",
+      twitter: "",
       github: "#",
       linkedin:
         "https://www.linkedin.com/in/riguen-kateka-1381112b7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
