@@ -69,7 +69,7 @@ const hovered = ref(false);
 // Card data
 const cardData = ref([
   {
-    image: "@/assets/avatar3.jpg",
+    image: "/src/assets/avatar3.jpg",
     alt: "Ayane OSEE",
     name: "Ayane OSEE",
     title: "CEO",
