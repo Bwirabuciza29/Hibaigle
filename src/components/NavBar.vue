@@ -69,7 +69,7 @@
             <q-menu
               transition-show="scale"
               transition-hide="scale"
-              class="bg-transparent w-full md:w-auto md:ml-0 ml-4"
+              class="bg-transparent w-full"
             >
               <div
                 class="blur-background w-full bg-sky-900 bg-opacity-70 text-white border border-gray-400"
