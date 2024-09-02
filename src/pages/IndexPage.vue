@@ -47,17 +47,7 @@
     <div class="rm-wrapper bg-white">
       <TeamSection />
     </div>
-    <div class="rm-wrapper relative">
-      <!-- <div class="absolute inset-0">
-        <iframe
-          width="100%"
-          title="map"
-          scrolling="no"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1161132383813!2d29.205895874185824!3d-1.6737196361706503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd0f26ed024195%3A0x41de59a10eb8289!2sHibaigle%20SAS!5e0!3m2!1sfr!2scd!4v1725280512461!5m2!1sfr!2scd"
-          style=""
-        ></iframe>
-      </div> -->
-
+    <div class="rm-wrapper bg-blue-50">
       <ContactSection />
     </div>
     <div class="rm-wrapper bg-sky-950">
