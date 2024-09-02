@@ -37,7 +37,7 @@
     </div>
     <div
       class="rm-wrapper"
-      style="background-image: url('/src/assets/bg-16.jpg')"
+      style="background-image: url('src/assets/bg-16.jpg')"
     >
       <MethodSection />
     </div>
@@ -46,6 +46,9 @@
     </div>
     <div class="rm-wrapper bg-white">
       <TeamSection />
+    </div>
+    <div class="rm-wrapper">
+      <ContactSection />
     </div>
     <div class="rm-wrapper bg-sky-950">
       <FooterSection />
@@ -60,6 +63,7 @@ import AboutSection from "src/components/AboutSection.vue";
 import MethodSection from "src/components/MethodSection.vue";
 import ServiceSection from "src/components/ServiceSection.vue";
 import TeamSection from "src/components/TeamSection.vue";
+import ContactSection from "src/components/ContactSection.vue";
 import FooterSection from "src/components/FooterSection.vue";
 
 // Array of titles for rotation
