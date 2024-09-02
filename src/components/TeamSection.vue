@@ -69,7 +69,7 @@ const hovered = ref(false);
 // Card data
 const cardData = ref([
   {
-    image: "/src/assets/avatar3.jpg",
+    image: "src/assets/avatar3.jpg",
     alt: "Ayane OSEE",
     name: "Ayane OSEE",
     title: "CEO",
@@ -81,7 +81,7 @@ const cardData = ref([
     },
   },
   {
-    image: "/src/assets/avatar6.jpg",
+    image: "src/assets/avatar6.jpg",
     alt: "Bwirabuciza",
     name: "BWIRABUCIZA",
     title: "CTO",
@@ -93,7 +93,7 @@ const cardData = ref([
     },
   },
   {
-    image: "/src/assets/avatar5.jpg",
+    image: "src/assets/avatar5.jpg",
     alt: "Florence",
     name: "Linda WAZA",
     title: "CCO",
@@ -106,7 +106,7 @@ const cardData = ref([
     },
   },
   {
-    image: "/src/assets/avatar2.jpg",
+    image: "src/assets/avatar2.jpg",
     alt: "Ringo",
     name: "Riguen KATEKA",
     title: "CFO",
