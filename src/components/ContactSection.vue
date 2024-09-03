@@ -38,7 +38,7 @@
           <div class="flex flex-col">
             <span class="font-bold">Address</span>
             <span>8 Av.Beni Q. Katindo, C.Goma Nord-Kivu/Goma, RDC</span>
-            <span>01984-8381</span>
+            <!-- <span>+243 995 825 482 / +243 976 761 610</span> -->
             <div class="py-4">
               <form action="" class="py-2 px-2 space-y-4">
                 <div>
