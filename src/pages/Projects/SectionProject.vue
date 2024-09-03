@@ -16,7 +16,7 @@
       <section class="relative py-16 bg-slate-950">
         <div class="container mx-auto px-4">
           <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+            class="relative flex flex-col bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
           >
             <div class="py-4 px-6 bg-white">
               <h1 class="text-2xl font-bold mb-4">Nos Projets</h1>
