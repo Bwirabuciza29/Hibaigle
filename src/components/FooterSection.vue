@@ -1,9 +1,5 @@
 <template>
-  <section
-    class="rm-container section relative"
-    id="services"
-    data-aos="fade-up"
-  >
+  <section class="rm-container section relative" id="services">
     <div class="bg-opacity-5 px-4 py-12 text-white">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Left Column -->

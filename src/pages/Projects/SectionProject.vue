@@ -45,10 +45,11 @@
                 v-if="filteredCards.length > 0"
                 class="grid grid-cols-2 sm:grid-cols-2 gap-4"
               >
+                <!-- Début CARD -->
                 <div
                   v-for="item in filteredCards"
                   :key="item.id"
-                  class="bg-sky-50 flex flex-col sm:flex-row hover:border border-sky-300"
+                  class="bg-sky-50 flex flex-col sm:flex-row hover:border border-sky-300 hover:bg-white"
                 >
                   <img
                     :src="item.image"
