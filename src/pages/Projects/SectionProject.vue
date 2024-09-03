@@ -5,7 +5,7 @@
       <section class="relative block" style="height: 500px">
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover flex items-center justify-center"
-          style="background-image: url('/src/assets/a.jpg')"
+          style="background-image: url('/src/assets/hero-b.jpg')"
         >
           <span
             id="blackOverlay"
