@@ -31,12 +31,13 @@
             <div
               class="bottom-8 left-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
             >
-              <a
-                href="#"
-                class="relative bg-sky-700 hover:bg-sky-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-sky-700 hover:to-sky-900 flex items-center justify-center"
-              >
-                Nos projets <span aria-hidden="true">→</span>
-              </a>
+              <router-link to="/projects">
+                <a
+                  class="relative bg-sky-700 hover:bg-sky-800 text-white py-2 px-4 rounded-lg transition-colors duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-sky-700 hover:to-sky-900 flex items-center justify-center"
+                >
+                  Nos projets <span aria-hidden="true">→</span>
+                </a>
+              </router-link>
             </div>
           </div>
         </div>
