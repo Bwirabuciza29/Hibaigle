@@ -24,8 +24,13 @@
                 <a
                   v-for="button in buttons"
                   :key="button.id"
-                  :class="button.class"
-                  class="px-4 py-2"
+                  :class="[
+                    button.id === activeButton
+                      ? 'bg-sky-800 text-white'
+                      : 'bg-gray-100 text-gray-600',
+                    'px-4 py-2 cursor-pointer',
+                  ]"
+                  @click="setActiveButton(button.id)"
                 >
                   {{ button.label }}
                 </a>
@@ -33,17 +38,21 @@
             </div>
             <!-- Cards -->
             <div class="p-6">
-              <div class="grid grid-cols-2 sm:grid-cols-2 gap-4">
+              <div
+                v-if="filteredCards.length > 0"
+                class="grid grid-cols-2 sm:grid-cols-2 gap-4"
+              >
                 <div
-                  v-for="item in cards"
+                  v-for="item in filteredCards"
                   :key="item.id"
-                  class="bg-sky-50 flex flex-col sm:flex-row"
+                  class="bg-sky-50 flex flex-col sm:flex-row hover:border border-sky-300"
                 >
                   <img
                     :src="item.image"
                     alt="Card Image"
                     class="w-full sm:w-1/3 h-40 object-cover"
                   />
+
                   <div class="w-full sm:w-2/3 p-3">
                     <div class="flex items-center gap-2 mb-1">
                       <span
@@ -74,6 +83,16 @@
                   </div>
                 </div>
               </div>
+              <div v-else class="text-center">
+                <img
+                  src="~assets/none.png"
+                  alt="No Content"
+                  class="mx-auto w-48 h-auto"
+                />
+                <p class="text-gray-400 mt-2 font-semibold">
+                  Aucun projet disponible pour cette catégorie.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -83,20 +102,21 @@
   </div>
 </template>
 <script setup>
+import { ref, computed } from "vue";
 import NavAbout from "src/components/AboutSections/NavAbout.vue";
 import FooterSection from "src/components/FooterSection.vue";
 const buttons = [
-  { id: 1, label: "TOUS LES PROJETS", class: "bg-sky-800 text-white" },
-  { id: 2, label: "h~mahanay", class: "bg-gray-100 text-gray-600" },
-  { id: 3, label: "h~muke", class: "bg-gray-100 text-gray-600" },
-  { id: 4, label: "h~soma", class: "bg-gray-100 text-gray-600" },
-  { id: 5, label: "h~santé", class: "bg-gray-100 text-gray-600" },
+  { id: 1, label: "TOUS LES PROJETS" },
+  { id: 2, label: "h~mahanay" },
+  { id: 3, label: "h~muke" },
+  { id: 4, label: "h~soma" },
+  { id: 5, label: "h~santé" },
 ];
 
 const cards = [
   {
     id: 1,
-    image: "src/assets/met.jpg",
+    image: "src/assets/mahanayV1.png",
     label: "h~mahanay",
     labelClass: "bg-sky-600 text-white",
     title: "La plateforme la plus optimale pour la gestion saine de vos biens",
@@ -105,7 +125,7 @@ const cards = [
   },
   {
     id: 2,
-    image: "src/assets/met.jpg",
+    image: "src/assets/baby.jpg",
     label: "h~muke",
     labelClass: "bg-green-600 text-white",
     title: "Le discours du Président Macron au Forum des industries...",
@@ -114,21 +134,29 @@ const cards = [
   },
   {
     id: 3,
-    image: "src/assets/met.jpg",
+    image: "src/assets/vr.png",
     label: "h~soma",
     labelClass: "bg-yellow-400 text-white",
     title: "Le discours du Président Macron au Forum des industries...",
     date: "19 octobre 2023 à 11:47 UTC+2",
     readTime: "1 min de lecture",
   },
-  {
-    id: 4,
-    image: "src/assets/met.jpg",
-    label: "h~santé",
-    labelClass: "bg-purple-600 text-white",
-    title: "Le discours du Président Macron au Forum des industries...",
-    date: "19 octobre 2023 à 11:47 UTC+2",
-    readTime: "1 min de lecture",
-  },
 ];
+const activeButton = ref(1);
+
+const setActiveButton = (id) => {
+  activeButton.value = id;
+};
+
+const filteredCards = computed(() => {
+  if (activeButton.value === 1) {
+    return cards;
+  } else {
+    return cards.filter(
+      (card) =>
+        card.label ===
+        buttons.find((button) => button.id === activeButton.value).label
+    );
+  }
+});
 </script>
