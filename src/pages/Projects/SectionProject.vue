@@ -86,6 +86,7 @@
                     <p class="text-xs text-gray-500">{{ item.date }}</p>
                   </div>
                 </div>
+                <!-- Fin card -->
               </div>
               <div v-else class="text-center">
                 <img
