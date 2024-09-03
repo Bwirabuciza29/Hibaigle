@@ -23,8 +23,7 @@
             class="relative flex flex-col bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
           >
             <div class="py-4 px-6 bg-white">
-              <h1 class="text-2xl font-bold mb-4">Nos Projets</h1>
-              <div class="flex flex-wrap gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4 mt-4">
                 <a
                   v-for="button in buttons"
                   :key="button.id"
