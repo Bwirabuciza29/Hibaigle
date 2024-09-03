@@ -4,15 +4,19 @@
     <main class="profile-page">
       <section class="relative block" style="height: 500px">
         <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
+          class="absolute top-0 w-full h-full bg-center bg-cover flex items-center justify-center"
           style="background-image: url('/src/assets/a.jpg')"
         >
           <span
             id="blackOverlay"
             class="w-full h-full absolute opacity-50 bg-black"
           ></span>
+          <div class="relative z-10 text-white text-center p-4">
+            <h1 class="text-5xl font-bold -mt-32">Nos Projets</h1>
+          </div>
         </div>
       </section>
+
       <section class="relative py-16 bg-slate-950">
         <div class="container mx-auto px-4">
           <div
@@ -128,7 +132,7 @@ const cards = [
     image: "src/assets/baby.jpg",
     label: "h~muke",
     labelClass: "bg-green-600 text-white",
-    title: "Le discours du Président Macron au Forum des industries...",
+    title: "La plateforme la plus optimale pour la gestion saine de vos biens",
     date: "19 octobre 2023 à 11:47 UTC+2",
     readTime: "1 min de lecture",
   },
@@ -137,7 +141,7 @@ const cards = [
     image: "src/assets/vr.png",
     label: "h~soma",
     labelClass: "bg-yellow-400 text-white",
-    title: "Le discours du Président Macron au Forum des industries...",
+    title: "La plateforme la plus optimale pour la gestion saine de vos biens",
     date: "19 octobre 2023 à 11:47 UTC+2",
     readTime: "1 min de lecture",
   },
