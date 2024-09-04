@@ -18,17 +18,19 @@
           >
             {{ currentSubTitle }}
           </h2>
-          <button
-            class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
-          >
-            <span
-              class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
-              >Ce que nous vous offrons...</span
+          <router-link to="/projects">
+            <button
+              class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
             >
-            <div
-              class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
-            ></div>
-          </button>
+              <span
+                class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
+                >Ce que nous vous offrons...</span
+              >
+              <div
+                class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+              ></div>
+            </button>
+          </router-link>
         </div>
       </div>
     </div>
