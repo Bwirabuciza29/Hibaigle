@@ -29,7 +29,7 @@
                   :key="button.id"
                   :class="[
                     button.id === activeButton
-                      ? 'bg-sky-800 text-white'
+                      ? 'bg-sky-950 text-white'
                       : 'bg-gray-100 text-gray-600',
                     'px-4 py-2 cursor-pointer',
                   ]"
@@ -49,7 +49,7 @@
                 <div
                   v-for="item in filteredCards"
                   :key="item.id"
-                  class="bg-sky-50 flex flex-col sm:flex-row hover:border border-sky-300 hover:bg-white"
+                  class="bg-sky-50 flex flex-col sm:flex-row hover:border border-sky-900 hover:bg-white"
                 >
                   <img
                     :src="item.image"

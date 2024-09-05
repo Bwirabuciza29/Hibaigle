@@ -22,7 +22,7 @@
           </p>
           <p>
             <strong>Email:</strong>
-            <a href="mailto:info@hibaigle.net" class="text-blue-400"
+            <a href="mailto:info@hibaigle.net" class="text-sky-400"
               >info@hibaigle.net</a
             >
           </p>
@@ -59,7 +59,7 @@
             />
             <button
               type="submit"
-              class="bg-sky-600 hover:bg-sky-700 text-white p-2 rounded-r-md"
+              class="bg-sky-900 hover:bg-sky-700 text-white p-2 rounded-r-md"
             >
               souscrire
             </button>
@@ -77,7 +77,7 @@
           </p>
           <p class="text-sm">
             Designed by
-            <a href="#" class="text-blue-400 hover:underline">hibaigle team</a>
+            <a href="#" class="text-sky-400 hover:underline">hibaigle team</a>
           </p>
           <div class="flex space-x-4 mt-4 md:mt-0">
             <a href="#" class="text-white hover:text-blue-400"
