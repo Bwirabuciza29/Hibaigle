@@ -64,24 +64,6 @@
                         class="px-2 py-1 text-xs font-bold rounded-full"
                         >{{ item.label }}</span
                       >
-                      <!-- <span class="text-gray-500 text-xs flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="size-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                          />
-                        </svg>
-
-                        {{ item.readTime }}
-                      </span> -->
                     </div>
                     <h2 class="text-sm font-semibold mb-1">{{ item.title }}</h2>
                     <p class="text-xs text-gray-500">{{ item.date }}</p>
