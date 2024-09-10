@@ -63,7 +63,7 @@
                   Formulaire de souscription
                 </h2>
               </q-card-section>
-
+              <!-- FORMULAIRE DE SOUMISSION DES DONNEES -->
               <q-card-section>
                 <form @submit.prevent="submitForm">
                   <q-input
@@ -145,7 +145,7 @@
                   />
                 </form>
               </q-card-section>
-
+              <!-- FIN FORMULAIRE DE SOUMISSION DES DONNEES -->
               <q-card-actions align="right">
                 <q-btn
                   square
