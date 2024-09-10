@@ -42,16 +42,122 @@
         <!-- Les boutons left du Navbar -->
         <div class="gt-sm gap-1">
           <button
+            @click="openDialogue"
             class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
           >
             <span
               class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
-              >Souscrire ici</span
+              >Souscrire</span
             >
             <div
               class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
             ></div>
           </button>
+          <q-dialog v-model="dialogue" :backdrop-filter="backdropFilter">
+            <q-card
+              class="max-w-lg mx-auto overflow-y-auto hide-scrollbar bg-sky-100"
+              style="max-height: 90vh"
+            >
+              <q-card-section class="row items-center q-pb-none text-h6">
+                <h2 class="text-gray-900 font-bold">
+                  Formulaire de souscription
+                </h2>
+              </q-card-section>
+
+              <q-card-section>
+                <form @submit.prevent="submitForm">
+                  <q-input
+                    dense
+                    filled
+                    v-model="nom"
+                    label="Nom"
+                    :rules="[(val) => !!val || 'Nom requis']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="nomEntreprise"
+                    label="Nom Entreprise"
+                    :rules="[(val) => !!val || 'Nom Entreprise requis']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="formeJudiciaire"
+                    label="Forme Judiciaire"
+                    :rules="[(val) => !!val || 'Forme Judiciaire requise']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="email"
+                    label="Email"
+                    :rules="[(val) => !!val || 'Email requis']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="services"
+                    label="Services"
+                    :rules="[(val) => !!val || 'Services requis']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="objectif"
+                    label="Objectif"
+                    :rules="[(val) => !!val || 'Objectif requis']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="delai"
+                    label="Delai"
+                    :rules="[(val) => !!val || 'Delai requis']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="budget"
+                    label="Budget"
+                    :rules="[(val) => !!val || 'Budget requis']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="adresse"
+                    label="Adresse"
+                    :rules="[(val) => !!val || 'Adresse requise']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="telephone"
+                    label="Téléphone"
+                    :rules="[(val) => !!val || 'Téléphone requis']"
+                  />
+                  <q-input
+                    dense
+                    filled
+                    v-model="cahierCharge"
+                    label="Cahier Charge"
+                    :rules="[(val) => !!val || 'Cahier Charge requis']"
+                  />
+                </form>
+              </q-card-section>
+
+              <q-card-actions align="right">
+                <q-btn
+                  square
+                  class="bg-sky-900 w-full"
+                  label="Soumettre"
+                  color="primary"
+                  :disabled="!formIsValid"
+                  @click="submitForm"
+                />
+              </q-card-actions>
+            </q-card>
+          </q-dialog>
         </div>
         <!-- fin bouton -->
         <!-- Le menu toggle -->
@@ -189,7 +295,7 @@
   </div>
 </template>
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, computed } from "vue";
 import VueScrollTo from "vue-scrollto";
 
 const menuItems = [
@@ -204,10 +310,50 @@ const isScrolled = ref(false);
 const isMenuVisible = ref(true);
 const isMenuOpen = ref(false);
 const dialog = ref(false);
+const dialogue = ref(false);
 const backdropFilter = ref("grayscale(100%)");
 
 // État pour le lien actif
 const activeLink = ref("Accueil");
+
+// Champs du formulaire
+const nom = ref("");
+const nomEntreprise = ref("");
+const formeJudiciaire = ref("");
+const email = ref("");
+const services = ref("");
+const objectif = ref("");
+const delai = ref("");
+const budget = ref("");
+const adresse = ref("");
+const telephone = ref("");
+const cahierCharge = ref("");
+
+// Fonction pour vérifier si le formulaire est valide
+const formIsValid = computed(() => {
+  return (
+    nom.value &&
+    nomEntreprise.value &&
+    formeJudiciaire.value &&
+    email.value &&
+    services.value &&
+    objectif.value &&
+    delai.value &&
+    budget.value &&
+    adresse.value &&
+    telephone.value &&
+    cahierCharge.value
+  );
+});
+
+// Fonction de soumission du formulaire
+const submitForm = () => {
+  if (formIsValid.value) {
+    console.log("Formulaire soumis avec succès");
+  } else {
+    console.log("Veuillez remplir tous les champs");
+  }
+};
 
 // Fonction pour définir le lien actif
 const setActiveLink = (linkName) => {
@@ -236,6 +382,11 @@ const handleScroll = () => {
 
 const scrollToSection = (sectionId) => {
   VueScrollTo.scrollTo(`#${sectionId}`, 500, { easing: "ease-in-out" });
+};
+
+// Fonction pour ouvrir le dialog avec 'invert(70%)'
+const openDialogue = () => {
+  dialogue.value = true;
 };
 
 onMounted(() => {
