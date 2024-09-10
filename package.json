@@ -2,7 +2,7 @@
   "name": "hibaigle-site",
   "version": "0.0.1",
   "description": "Site Hibaigle",
-  "productName": "HibApp",
+  "productName": "hibaigle",
   "author": "Bwirabuciza29 <blondybwirabuciza@gmail.com>",
   "private": true,
   "scripts": {

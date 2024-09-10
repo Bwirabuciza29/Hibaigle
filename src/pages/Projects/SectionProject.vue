@@ -12,7 +12,7 @@
             class="w-full h-full absolute opacity-50 bg-black"
           ></span>
           <div class="relative z-10 text-white text-center p-4">
-            <h1 class="text-5xl font-bold -mt-32">Nos Projets</h1>
+            <h1 class="text-5xl font-bold -mt-32">Juste pour vous!</h1>
           </div>
         </div>
       </section>
@@ -94,11 +94,11 @@ import { ref, computed } from "vue";
 import NavAbout from "src/components/AboutSections/NavAbout.vue";
 import FooterSection from "src/components/FooterSection.vue";
 const buttons = [
-  { id: 1, label: "TOUS LES PROJETS" },
+  { id: 1, label: "NOS OFFRES" },
   { id: 2, label: "h~mahanay" },
   { id: 3, label: "h~muke" },
   { id: 4, label: "h~soma" },
-  { id: 5, label: "h~santé" },
+  { id: 5, label: "h~jamaa" },
 ];
 
 const cards = [
@@ -108,7 +108,7 @@ const cards = [
     label: "h~mahanay",
     labelClass: "bg-sky-600 text-white",
     title: "La plateforme la plus optimale pour la gestion saine de vos biens",
-    date: "19 octobre 2023 à 11:47 UTC+2",
+    date: "En savoir plus...",
     // readTime: "1 min de lecture",
   },
   {
@@ -116,8 +116,8 @@ const cards = [
     image: "src/assets/baby.jpg",
     label: "h~muke",
     labelClass: "bg-green-600 text-white",
-    title: "La plateforme la plus optimale pour la gestion saine de vos biens",
-    date: "19 octobre 2023 à 11:47 UTC+2",
+    title: "Apprenez et valoriser vos talents féminins grâce au numérique",
+    date: "En savoir plus...",
     // readTime: "1 min de lecture",
   },
   {
@@ -125,8 +125,17 @@ const cards = [
     image: "src/assets/vr.png",
     label: "h~soma",
     labelClass: "bg-yellow-400 text-white",
-    title: "La plateforme la plus optimale pour la gestion saine de vos biens",
-    date: "19 octobre 2023 à 11:47 UTC+2",
+    title: "Devenez enfin votre propre éditeur et éditorialiste",
+    date: "En savoir plus...",
+    // readTime: "1 min de lecture",
+  },
+  {
+    id: 4,
+    image: "src/assets/gene.png",
+    label: "h~jamaa",
+    labelClass: "bg-purple-400 text-white",
+    title: "Découvrez votre généalogie juste en un clic",
+    date: "En savoir plus...",
     // readTime: "1 min de lecture",
   },
 ];

@@ -22,8 +22,8 @@
         Services
       </h2>
       <p class="font-semibold text-gray-500 text-center hover:text-white pb-4">
-        Nos services sont accessibles à tous et compatible aux besoins
-        numériques
+        Nos services sont accessibles à tous et compatibles aux besoins et
+        ambitions digitals.
       </p>
       <div class="relative p-6">
         <!-- Filigrane -->
@@ -67,17 +67,18 @@ const cards = [
   {
     title: "Conception",
     description:
-      "Développement des solutions technologiques (gadgets et appareils électroniques, logiciels, progiciel, , applications, etc.) axées sur les secteurs de l’éducation, de l’environnement, de la santé, etc.",
+      "Développement des solutions technologiques (gadgets et appareils électroniques, logiciels, progiciel, , applications, etc.) axées sur les secteurs de l’éducation, de l’environnement, de la santé, des Arts et cultures... etc.",
     // image: "/src/assets/met.jpg",
   },
   {
     title: "Etudes & Consultances",
     description:
-      "Meilleur service d'appui et de consultance en Electricité, Electronique et Electro-mécanique",
+      "Meilleur service d'appui et de consultance en Informatique, en Analyse de données, en Electricité, Electronique et Electro-mécanique",
   },
   {
-    title: "Audit & Sous-traitance",
-    description: "Audit, consultance, sous-traitance et assistance en IT",
+    title: "Audit Informatique",
+    description:
+      "Un contrôle qualité en toute indépendance et au jugement efficient",
   },
   {
     title: "Marketing digital",

@@ -46,7 +46,7 @@
           >
             <span
               class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
-              >h~LAC</span
+              >Souscrire ici</span
             >
             <div
               class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"

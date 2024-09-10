@@ -26,10 +26,14 @@
           <!-- Text Paragraph -->
           <p class="text-pretty text-gray-700 mb-6 text-center">
             Nous sommes une Société par Action simplifié de droit congolais,
-            basée à Goma. Centrée sur les numériques, la société hibaigle
-            propose différents services dont le développement des logiciels,
-            l'assistance marketing, la consultance dans les analyses des données
-            et le marketing digital, l'Audit informatique, la maintenance.
+            basée à Goma. <br />
+            Centrée sur les numériques, la société hibaigle propose différents
+            services dont le développement des logiciels, l'assistance
+            marketing, la consultance dans les analyses des données et le
+            marketing digital, l'Audit informatique, la maintenance; et divers
+            produits en cours de déploiement et de développement pour une
+            intégration significative du numérique ainsi qu'une immersion à
+            moindre risque au profit de tous.
           </p>
 
           <!-- Voir Plus Button -->

@@ -70,7 +70,7 @@
               Développement
             </div>
             <p class="mb-4 text-justify">
-              Nos développeurs travaillent dur pour vous assurer une meilleure
+              Nos équipes travaillent dur pour vous assurer une meilleure
               expérience utilisateur.
             </p>
 
@@ -89,8 +89,8 @@
               Motivation
             </div>
             <p class="mb-4 text-justify">
-              Motivés par la volonté de bien faire et de vous offrir le
-              meilleur.
+              Motivée par la volonté de bien faire et de vous offrir le meilleur
+              que vous méritez.
             </p>
           </div>
 

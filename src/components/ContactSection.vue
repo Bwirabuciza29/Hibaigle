@@ -38,6 +38,8 @@
           <div class="flex flex-col">
             <span class="font-bold">Address</span>
             <span>8 Av.Beni Q. Katindo, C.Goma Nord-Kivu/Goma, RDC</span>
+            <span class="font-bold mt-4 text-center">Ecrivez-nous ici!</span>
+
             <!-- <span>+243 995 825 482 / +243 976 761 610</span> -->
             <div class="py-4">
               <form action="" class="py-2 px-2 space-y-4">
@@ -89,7 +91,7 @@
                     type="submit"
                     class="w-full bg-sky-900 text-white px-4 py-2 rounded-md hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:ring-offset-2"
                   >
-                    Send
+                    Soumettre
                   </button>
                 </div>
               </form>
