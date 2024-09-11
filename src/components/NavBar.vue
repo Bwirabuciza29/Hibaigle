@@ -55,14 +55,16 @@
           </button>
           <q-dialog v-model="dialogue" :backdrop-filter="backdropFilter">
             <q-card
-              class="max-w-lg mx-auto overflow-y-auto hide-scrollbar bg-sky-100"
+              class="max-w-lg mx-auto overflow-y-auto hide-scrollbar bg-gray-100 square"
               style="max-height: 90vh"
             >
+              <q-linear-progress :value="0.6" color="light-blue-10" />
               <q-card-section class="row items-center q-pb-none text-h6">
-                <h2 class="text-gray-900 font-bold">
+                <h2 class="font-bold text-sky-700">
                   Formulaire de souscription
                 </h2>
               </q-card-section>
+              <hr class="border border-sky-700" />
               <!-- FORMULAIRE DE SOUMISSION DES DONNEES -->
               <q-card-section>
                 <form @submit.prevent="submitForm">
