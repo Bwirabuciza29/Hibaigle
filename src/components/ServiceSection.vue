@@ -43,18 +43,21 @@
               <h3 class="text-xl font-semibold mb-2">{{ card.title }}</h3>
               <p class="text-gray-200">{{ card.description }}</p>
             </div>
-            <button
+            <a
+              :href="card.link"
+              target="_blank"
+              rel="noopener noreferrer"
               class="relative inline-block w-1/2 px-2 py-2 mt-4 text-white bg-sky-900 border-2 border-sky-800 rounded-full overflow-hidden group transform transition-transform hover:scale-100"
             >
               <span
-                class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
+                class="relative z-10 flex items-center justify-center h-full w-full transition-colors duration-300 ease-in-out group-hover:text-sky-900"
                 >En savoir plus</span
               >
 
               <div
                 class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
               ></div>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -63,27 +66,44 @@
 </template>
 <script setup>
 import { ref } from "vue";
+
 const cards = [
   {
     title: "Conception",
     description:
-      "Développement des solutions technologiques (gadgets et appareils électroniques, logiciels, progiciel, , applications, etc.) axées sur les secteurs de l’éducation, de l’environnement, de la santé, des Arts et cultures... etc.",
+      "Développement des solutions technologiques (gadgets et appareils électroniques, logiciels, progiciel, applications, etc.) axées sur les secteurs de l’éducation, de l’environnement, de la santé, des Arts et cultures... etc.",
+    link: "https://example.com/conception",
     // image: "/src/assets/met.jpg",
   },
   {
     title: "Etudes & Consultances",
     description:
       "Meilleur service d'appui et de consultance en Informatique, en Analyse de données, en Electricité, Electronique et Electro-mécanique",
+    link: "https://example.com/etudes-consultances",
   },
   {
     title: "Audit Informatique",
     description:
       "Un contrôle qualité en toute indépendance et au jugement efficient",
+    link: "https://example.com/audit-informatique",
   },
   {
     title: "Marketing digital",
-    description: "Graphisme,Design et couverture médiatique",
+    description: "Graphisme, Design et couverture médiatique",
+    link: "https://example.com/marketing-digital",
+  },
+  {
+    title: "Analyse de données",
+    description:
+      "Analyse statistique, cadrillage, visualisation et cartographie.",
+    link: "https://example.com/analyse-de-donnees",
+  },
+  {
+    title: "h~LAC",
+    description: "Structure d'accompagnement et d'assistance humanitaire",
+    link: "https://hlac.hibaigle.net/",
   },
 ];
+
 const hovered = ref(false);
 </script>
