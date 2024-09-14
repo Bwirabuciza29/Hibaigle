@@ -72,31 +72,31 @@ const cards = [
     title: "Conception",
     description:
       "Développement des solutions technologiques (gadgets et appareils électroniques, logiciels, progiciel, applications, etc.) axées sur les secteurs de l’éducation, de l’environnement, de la santé, des Arts et cultures... etc.",
-    link: "https://example.com/conception",
+    link: "#",
     // image: "/src/assets/met.jpg",
   },
   {
     title: "Etudes & Consultances",
     description:
       "Meilleur service d'appui et de consultance en Informatique, en Analyse de données, en Electricité, Electronique et Electro-mécanique",
-    link: "https://example.com/etudes-consultances",
+    link: "#",
   },
   {
     title: "Audit Informatique",
     description:
       "Un contrôle qualité en toute indépendance et au jugement efficient",
-    link: "https://example.com/audit-informatique",
+    link: "#",
   },
   {
     title: "Marketing digital",
     description: "Graphisme, Design et couverture médiatique",
-    link: "https://example.com/marketing-digital",
+    link: "#",
   },
   {
     title: "Analyse de données",
     description:
       "Analyse statistique, cadrillage, visualisation et cartographie.",
-    link: "https://example.com/analyse-de-donnees",
+    link: "#",
   },
   {
     title: "h~LAC",
