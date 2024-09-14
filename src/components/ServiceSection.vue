@@ -73,7 +73,6 @@ const cards = [
     description:
       "Développement des solutions technologiques (gadgets et appareils électroniques, logiciels, progiciel, applications, etc.) axées sur les secteurs de l’éducation, de l’environnement, de la santé, des Arts et cultures... etc.",
     link: "#",
-    // image: "/src/assets/met.jpg",
   },
   {
     title: "Etudes & Consultances",
