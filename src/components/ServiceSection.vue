@@ -75,7 +75,7 @@ const cards = [
     link: "#",
   },
   {
-    title: "Etudes & Consultances",
+    title: "Agence de Placement et Recrutement",
     description:
       "Meilleur service d'appui et de consultance en Informatique, en Analyse de données, en Electricité, Electronique et Electro-mécanique",
     link: "#",

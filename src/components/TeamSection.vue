@@ -72,7 +72,6 @@ const cardData = ref([
     image: "src/assets/avatar3.jpg",
     alt: "Ayane OSEE",
     name: "Ayane OSEE",
-    title: "CEO",
     description: "Data manager",
     links: {
       twitter: "https://x.com/OBooye",
@@ -84,8 +83,7 @@ const cardData = ref([
     image: "src/assets/avatar6.jpg",
     alt: "Bwirabuciza",
     name: "BWIRABUCIZA",
-    title: "CTO",
-    description: "Dev UI&UX",
+    description: "Software Engineer-UI&UX Dev",
     links: {
       twitter: "https://x.com/achille_blondy",
       github: "https://github.com/Bwirabuciza29",
@@ -93,11 +91,46 @@ const cardData = ref([
     },
   },
   {
+    image: "src/assets/avatar8.jpg",
+    alt: "Denzel",
+    name: "Henock LUNGELE",
+    description: "Software Engineer-Dev Fullstack",
+    links: {
+      twitter: "",
+      github: "https://github.com/KITUNGANOLUNGELE",
+      linkedin:
+        "https://www.linkedin.com/in/henock-kitungano-53131a284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+  },
+  {
     image: "src/assets/avatar5.jpg",
     alt: "Florence",
     name: "Linda WAZA",
-    title: "CCO",
-    description: "Data analyst",
+    description: "Software Engineer-Digital Marketing",
+    links: {
+      twitter: "https://x.com/lindafoibe07/status/1668493930734731264?s=46",
+      github: "#",
+      linkedin:
+        "https://www.linkedin.com/in/linda-foibe-68a5a1278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    },
+  },
+  {
+    image: "src/assets/avatar9.jpg",
+    alt: "Danniel",
+    name: "CHIBULULANDA",
+    description: "Software Engineer-Dev Fullstack",
+    links: {
+      twitter: "https://x.com/lindafoibe07/status/1668493930734731264?s=46",
+      github: "#",
+      linkedin:
+        "https://www.linkedin.com/in/linda-foibe-68a5a1278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    },
+  },
+  {
+    image: "src/assets/avatar7.jpg",
+    alt: "Christy",
+    name: "Christelle BAMBA",
+    description: "Software Engineer-Dev Fullstack",
     links: {
       twitter: "https://x.com/lindafoibe07/status/1668493930734731264?s=46",
       github: "#",
@@ -109,8 +142,7 @@ const cardData = ref([
     image: "src/assets/avatar2.jpg",
     alt: "Ringo",
     name: "Riguen KATEKA",
-    title: "CFO",
-    description: "Accountant",
+    description: "Financial",
     links: {
       twitter: "",
       github: "#",
@@ -118,6 +150,7 @@ const cardData = ref([
         "https://www.linkedin.com/in/riguen-kateka-1381112b7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   },
+
   // Autres Cards
 ]);
 </script>
