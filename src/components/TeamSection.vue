@@ -80,7 +80,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar6.jpg",
+    image: "src/assets/avatar9.jpg",
     alt: "Bwirabuciza",
     name: "BWIRABUCIZA",
     description: "Software Engineer-UI&UX Dev",
@@ -91,7 +91,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar8.jpg",
+    image: "src/assets/avatar4.jpg",
     alt: "Denzel",
     name: "Henock LUNGELE",
     description: "Software Engineer-Dev Fullstack",
@@ -115,7 +115,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar9.jpg",
+    image: "src/assets/avatar6.jpg",
     alt: "Danniel",
     name: "CHIBULULANDA",
     description: "Software Engineer-Dev Fullstack",
@@ -127,7 +127,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar7.jpg",
+    image: "src/assets/avatar1.jpg",
     alt: "Christy",
     name: "Christelle BAMBA",
     description: "Software Engineer-Dev Fullstack",
