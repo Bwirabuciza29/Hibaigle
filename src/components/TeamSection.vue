@@ -132,10 +132,10 @@ const cardData = ref([
     name: "Christelle BAMBA",
     description: "Software Engineer-Dev Fullstack",
     links: {
-      twitter: "https://x.com/lindafoibe07/status/1668493930734731264?s=46",
-      github: "#",
+      twitter: "https://x.com/christellebamb5?s=21&t=d47FOj7HiYRi0h6Ljx6Pcg",
+      github: "https://github.com/Christy243",
       linkedin:
-        "https://www.linkedin.com/in/linda-foibe-68a5a1278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        "https://www.linkedin.com/in/christelle-bamba-701681248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
   },
   {
