@@ -104,7 +104,7 @@ const updateTitles = () => {
 };
 
 onMounted(() => {
-  setInterval(updateTitles, 5000); // Change les titres toutes les 5 secondes
+  setInterval(updateTitles, 5000);
 });
 </script>
 
