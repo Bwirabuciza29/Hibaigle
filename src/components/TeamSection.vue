@@ -120,10 +120,9 @@ const cardData = ref([
     name: "CHIBULULANDA",
     description: "Software Engineer-Dev Fullstack",
     links: {
-      twitter: "https://x.com/lindafoibe07/status/1668493930734731264?s=46",
+      twitter: "#",
       github: "#",
-      linkedin:
-        "https://www.linkedin.com/in/linda-foibe-68a5a1278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      linkedin: "http://www.linkedin.com/in/dany-chibululanda-8451502b2",
     },
   },
   {
