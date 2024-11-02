@@ -36,23 +36,28 @@
                 ></span>
               </a>
             </li>
+            <!-- bouton langues -->
           </ul>
         </div>
         <!-- Fin Navbar links -->
         <!-- Les boutons left du Navbar -->
-        <div class="gt-sm gap-1">
+        <div class="flex flex-wrap items-center gap-2">
+          <LangSwitcher class="flex-shrink-0" />
+
           <button
             @click="openDialogue"
             class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
           >
             <span
               class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
-              >Souscrire</span
             >
+              Souscrire
+            </span>
             <div
               class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
             ></div>
           </button>
+
           <q-dialog v-model="dialogue" :backdrop-filter="backdropFilter">
             <q-card
               class="max-w-lg mx-auto overflow-y-auto hide-scrollbar bg-gray-100 square"
@@ -65,6 +70,7 @@
                 </h2>
               </q-card-section>
               <hr class="border border-sky-700" />
+
               <!-- FORMULAIRE DE SOUMISSION DES DONNEES -->
               <q-card-section>
                 <form @submit.prevent="submitForm">
@@ -161,6 +167,7 @@
             </q-card>
           </q-dialog>
         </div>
+
         <!-- fin bouton -->
         <!-- Le menu toggle -->
         <div class="lt-md px-2 py-2 bg-sky-900 bg-opacity-20 mr-4">
@@ -299,6 +306,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import VueScrollTo from "vue-scrollto";
+import LangSwitcher from "src/components/LangSwitcher.vue";
 
 const menuItems = [
   { name: "Accueil" },
