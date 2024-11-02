@@ -2,18 +2,18 @@
   <div class="relative">
     <!-- Bouton de sélection de langue -->
     <button
-      class="flex items-center bg-gray-800 bg-opacity-20 text-white px-4 py-2 rounded-lg"
+      class="flex items-center bg-gray-800 bg-opacity-20 text-white px-4 py-2 rounded-lg md:px-4 md:py-2"
       @click="toggleDropdown"
       :class="{ 'text-sky-900': isScrolled }"
     >
-      <span class="mr-2">
+      <span class="mr-1 md:mr-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-6"
+          class="w-4 h-4 md:w-6 md:h-6"
         >
           <path
             stroke-linecap="round"
@@ -26,13 +26,13 @@
       <span class="flex items-center">
         <img
           :src="currentFlag"
-          class="w-4 h-4 rounded-full mr-2"
+          class="w-3 h-3 rounded-full mr-1 md:w-4 md:h-4 md:mr-2"
           :alt="currentLanguage + ' Flag'"
         />
-        <span>{{ currentLanguage }}</span>
+        <span class="text-sm md:text-base">{{ currentLanguage }}</span>
       </span>
       <svg
-        class="ml-2 w-4 h-4"
+        class="ml-1 w-3 h-3 md:ml-2 md:w-4 md:h-4"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -50,31 +50,31 @@
     <!-- Menu déroulant -->
     <div
       v-if="isDropdownOpen"
-      class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-10"
+      class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-1 z-10 md:w-48 md:py-2"
     >
       <a
         href="#"
-        class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200"
+        class="flex items-center px-3 py-1 text-gray-800 hover:bg-gray-200 md:px-4 md:py-2"
         @click="selectLanguage('EN', 'https://flagcdn.com/w20/us.png')"
       >
         <img
           src="https://flagcdn.com/w20/us.png"
-          class="w-4 h-4 rounded-full mr-2"
+          class="w-3 h-3 rounded-full mr-1 md:w-4 md:h-4 md:mr-2"
           alt="US Flag"
         />
-        <span>English (US)</span>
+        <span class="text-sm md:text-base">English (US)</span>
       </a>
       <a
         href="#"
-        class="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200"
+        class="flex items-center px-3 py-1 text-gray-800 hover:bg-gray-200 md:px-4 md:py-2"
         @click="selectLanguage('FR', 'https://flagcdn.com/w20/fr.png')"
       >
         <img
           src="https://flagcdn.com/w20/fr.png"
-          class="w-4 h-4 rounded-full mr-2"
+          class="w-3 h-3 rounded-full mr-1 md:w-4 md:h-4 md:mr-2"
           alt="FR Flag"
         />
-        <span>Français (FR)</span>
+        <span class="text-sm md:text-base">Français (FR)</span>
       </a>
     </div>
   </div>

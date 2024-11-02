@@ -2,10 +2,11 @@
   <router-view />
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<script setup>
+import { createI18n } from "vue-i18n";
 
-export default defineComponent({
-  name: 'App'
-})
+const i18n = createI18n({
+  // options pour vue-i18n ici ...
+});
 </script>
+
