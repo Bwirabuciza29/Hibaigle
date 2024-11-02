@@ -4,6 +4,7 @@
     <button
       class="flex items-center bg-gray-800 bg-opacity-20 text-white px-4 py-2 rounded-lg"
       @click="toggleDropdown"
+      :class="{ 'text-sky-900': isScrolled }"
     >
       <span class="mr-2">
         <svg
@@ -98,10 +99,6 @@ const toggleDropdown = () => {
 const selectLanguage = (lang, flag) => {
   currentLanguage.value = lang;
   currentFlag.value = flag;
-  isDropdownOpen.value = false; // Fermer le menu après la sélection
+  isDropdownOpen.value = false;
 };
 </script>
-
-<style scoped>
-/* Ajoutez des styles personnalisés ici si nécessaire */
-</style>
