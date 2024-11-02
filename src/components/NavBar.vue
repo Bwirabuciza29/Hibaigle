@@ -42,7 +42,7 @@
         <!-- Fin Navbar links -->
         <!-- Les boutons left du Navbar -->
         <div class="flex flex-wrap items-center gap-2">
-          <LangSwitcher class="flex-shrink-0" />
+          <!-- <LangSwitcher class="flex-shrink-0" /> -->
 
           <button
             @click="openDialogue"
