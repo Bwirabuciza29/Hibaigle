@@ -2,7 +2,7 @@
   <div class="relative">
     <!-- Bouton de sélection de langue -->
     <button
-      class="flex items-center bg-gray-800 bg-opacity-20 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      class="flex items-center bg-gray-800 bg-opacity-20 text-white px-4 py-2 rounded-lg"
       @click="toggleDropdown"
     >
       <span class="mr-2">

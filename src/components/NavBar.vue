@@ -46,7 +46,7 @@
 
           <button
             @click="openDialogue"
-            class="relative inline-block px-6 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
+            class="relative inline-block px-4 py-2 font-semibold text-white bg-sky-900 border-2 border-sky-800 rounded overflow-hidden group"
           >
             <span
               class="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-sky-900"
