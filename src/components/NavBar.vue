@@ -10,7 +10,7 @@
       >
         <!-- image logo -->
         <div class="pl-4 flex items-center">
-          <q-img class="w-20 my-2" src="~assets/logo (1).png" />
+          <q-img class="w-20 my-2" src="/img/logo_h.png" />
         </div>
         <!-- Navbar links -->
         <div class="gt-sm">
@@ -191,7 +191,7 @@
               >
                 <div class="container mx-auto grid flex-wrap mt-0 px-2">
                   <div class="pl-4 flex items-center justify-between">
-                    <q-img class="w-20 my-2" src="~assets/logo (1).png" />
+                    <q-img class="w-20 my-2" src="/img/logo_h.png" />
                     <q-btn
                       @click="toggleMenus"
                       flat

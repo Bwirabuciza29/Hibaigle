@@ -5,7 +5,7 @@
       <section class="relative block" style="height: 500px">
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="background-image: url('/src/assets/a.jpg')"
+          style="background-image: url('/img/a.jpg')"
         >
           <span
             id="blackOverlay"
@@ -26,7 +26,7 @@
                   <div class="relative">
                     <img
                       alt="..."
-                      src="~assets/log.png"
+                      src="/img/log.png"
                       class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
                       style="max-width: 150px"
                     />

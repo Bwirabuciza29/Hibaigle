@@ -15,7 +15,7 @@
         <!-- Large Card on the Left -->
         <div
           class="col-span-1 md:col-span-2 bg-sky-900 text-white rounded-xl p-8 relative bg-cover bg-center"
-          style="background-image: url('/src/assets/met.jpg')"
+          style="background-image: url('/img/met.jpg')"
         >
           <div
             class="absolute inset-0 bg-gradient-to-r from-sky-900 to-transparent opacity-80 rounded-xl"
@@ -49,11 +49,6 @@
           <div
             class="col-span-1 bg-yellow-100 text-gray-800 rounded-xl p-8 transition-transform transform hover:scale-105 hover:bg-yellow-200 relative"
           >
-            <!-- <img
-              src="~assets/communication.svg"
-              alt="Watermark"
-              class="absolute left-0 top-0 w-full h-full object-cover opacity-10"
-            /> -->
             <div class="text-yellow-500 font-bold uppercase text-xs mb-2">
               Communication
             </div>
@@ -76,7 +71,7 @@
 
             <!-- Watermark Image -->
             <img
-              src="~assets/Other.png"
+              src="/img/Other.png"
               alt="Filigrane"
               class="absolute -top-24 -right-10 w-40 h-auto opacity-100"
             />

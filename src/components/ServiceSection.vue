@@ -5,7 +5,7 @@
     data-aos="fade-up"
   >
     <img
-      src="~assets/bg.svg"
+      src="/img/bg.svg"
       alt="filigrane"
       class="absolute top-1/2 left-3/4 transform -translate-x-3/4 -translate-y-3/4 w-full md:w-3/4 opacity-10 pointer-events-none"
     />
@@ -28,7 +28,7 @@
       <div class="relative p-6">
         <!-- Filigrane -->
         <img
-          src="~assets/Marni 2.png"
+          src="/img/Marni_2.png"
           alt="Filigrane"
           class="absolute -top-4 -left-24 w-64 h-68 opacity-90 overflow-hidden"
         />

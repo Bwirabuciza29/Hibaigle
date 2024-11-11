@@ -1,7 +1,7 @@
 <template>
   <section class="rm-container section" id="about">
     <img
-      src="~assets/shape.png"
+      src="/img/shape.png"
       alt="Filigrane"
       class="absolute top-2 right-2 sm:top-4 sm:right-4 md:top-6 md:right-6 w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-100"
     />

@@ -6,7 +6,7 @@
       class="flex-1 bg-gradient-to-br from-sky-200 to-sky-500 rounded-lg shadow-lg transform transition-all duration-500 ease-in-out hover:scale-105"
     >
       <img
-        src="~assets/a.jpg"
+        src="/img/a.jpg"
         alt="Description de l'image"
         class="w-full h-48 object-cover rounded-t-lg"
       />

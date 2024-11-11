@@ -69,7 +69,7 @@ const hovered = ref(false);
 // Card data
 const cardData = ref([
   {
-    image: "src/assets/avatar3.jpg",
+    image: "/img/avatar3.jpg",
     alt: "Ayane OSEE",
     name: "Ayane OSEE",
     description: "Data manager",
@@ -80,7 +80,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar9.jpg",
+    image: "/img/avatar9.jpg",
     alt: "Bwirabuciza",
     name: "BWIRABUCIZA",
     description: "Software Engineer-UI&UX Dev",
@@ -91,7 +91,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar4.jpg",
+    image: "/img/avatar4.jpg",
     alt: "Denzel",
     name: "Henock LUNGELE",
     description: "Software Engineer-Dev Fullstack",
@@ -103,7 +103,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar5.jpg",
+    image: "/img/avatar5.jpg",
     alt: "Florence",
     name: "Linda WAZA",
     description: "Software Engineer-Digital Marketing",
@@ -115,7 +115,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar6.jpg",
+    image: "/img/avatar6.jpg",
     alt: "Danniel",
     name: "CHIBULULANDA",
     description: "Software Engineer-Dev Fullstack",
@@ -126,7 +126,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar1.jpg",
+    image: "/img/avatar1.jpg",
     alt: "Christy",
     name: "Christelle BAMBA",
     description: "Software Engineer-Dev Fullstack",
@@ -138,7 +138,7 @@ const cardData = ref([
     },
   },
   {
-    image: "src/assets/avatar2.jpg",
+    image: "/img/avatar2.jpg",
     alt: "Ringo",
     name: "Riguen KATEKA",
     description: "Financial",
@@ -149,7 +149,5 @@ const cardData = ref([
         "https://www.linkedin.com/in/riguen-kateka-1381112b7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   },
-
-  // Autres Cards
 ]);
 </script>

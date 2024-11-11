@@ -5,7 +5,7 @@
       <section class="relative block" style="height: 500px">
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover flex items-center justify-center"
-          style="background-image: url('/src/assets/hero-b.jpg')"
+          style="background-image: url('/img/hero-b.jpg')"
         >
           <span
             id="blackOverlay"
@@ -73,7 +73,7 @@
               </div>
               <div v-else class="text-center">
                 <img
-                  src="~assets/none.png"
+                  src="/img/none.png"
                   alt="No Content"
                   class="mx-auto w-48 h-auto"
                 />
@@ -104,7 +104,7 @@ const buttons = [
 const cards = [
   {
     id: 1,
-    image: "src/assets/mahanayV1.png",
+    image: "/img/mahanayV1.png",
     label: "h~mahanay",
     labelClass: "bg-sky-600 text-white",
     title: "La plateforme la plus optimale pour la gestion saine de vos biens",
@@ -113,7 +113,7 @@ const cards = [
   },
   {
     id: 2,
-    image: "src/assets/baby.jpg",
+    image: "/img/baby.jpg",
     label: "h~muke",
     labelClass: "bg-green-600 text-white",
     title: "Apprenez et valoriser vos talents féminins grâce au numérique",
@@ -122,7 +122,7 @@ const cards = [
   },
   {
     id: 3,
-    image: "src/assets/vr.png",
+    image: "/img/vr.png",
     label: "h~soma",
     labelClass: "bg-yellow-400 text-white",
     title: "Devenez enfin votre propre éditeur et éditorialiste",
@@ -131,7 +131,7 @@ const cards = [
   },
   {
     id: 4,
-    image: "src/assets/gene.png",
+    image: "/img/gene.png",
     label: "h~jamaa",
     labelClass: "bg-purple-400 text-white",
     title: "Découvrez votre généalogie juste en un clic",
