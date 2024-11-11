@@ -306,7 +306,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import VueScrollTo from "vue-scrollto";
-import LangSwitcher from "src/components/LangSwitcher.vue";
 
 const menuItems = [
   { name: "Accueil" },
