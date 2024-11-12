@@ -248,7 +248,7 @@
                     Souscrire
                   </button>
                   <div
-                    class="flex flex-col lg:flex-row justify-between items-center lg:items-start mt-8 text-sm"
+                    class="flex flex-col lg:flex-row justify-between items-center lg:items-start my-8 text-sm"
                   >
                     <div class="text-center lg:text-left">
                       © 2024 hibaigle. Made with ❤ and ☕
