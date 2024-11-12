@@ -75,12 +75,12 @@
             <q-menu
               transition-show="scale"
               transition-hide="scale"
-              class="bg-transparent w-full"
+              class="bg-transparent w-full flex justify-center"
             >
               <div
-                class="blur-background w-full bg-sky-900 bg-opacity-70 text-white border border-gray-400"
+                class="ml-10 blur-background w-full max-w-4xl bg-sky-900 bg-opacity-70 text-white border border-gray-400 rounded-lg"
               >
-                <div class="container mx-auto grid flex-wrap mt-0 px-2">
+                <div class="grid flex-wrap mt-0 px-4 mx-10">
                   <div class="pl-4 flex items-center justify-between">
                     <q-img class="w-20 my-2" src="/img/logo_h.png" />
                     <q-btn
@@ -126,6 +126,7 @@
                       </a>
                     </div>
                   </nav>
+
                   <router-link to="/souscrire">
                     <button
                       @click="
@@ -140,6 +141,7 @@
                       Souscrire
                     </button>
                   </router-link>
+
                   <div
                     class="flex flex-col lg:flex-row justify-between items-center lg:items-start my-8 text-sm"
                   >
