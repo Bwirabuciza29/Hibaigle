@@ -25,34 +25,33 @@
         Nos services sont accessibles à tous et compatibles aux besoins et
         ambitions digitals.
       </p>
-      <div class="relative p-6">
-        <!-- Filigrane -->
+      <div class="relative">
         <img
           src="/img/Marni_2.png"
           alt="Filigrane"
           class="absolute -top-4 -left-24 w-64 h-68 opacity-90 overflow-hidden"
         />
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 relative z-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Card component -->
           <div
             v-for="(card, index) in cards"
             :key="index"
-            class="relative flex flex-col justify-between p-6 bg-gradient-to-r from-sky-900 via-sky-800 to-transparent border border-sky-800 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl"
+            class="bg-gradient-to-r from-sky-900 via-sky-800 to-transparent border border-sky-800 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl p-6"
             :style="`background-image: url('${card.image}'); background-size: cover; background-position: center;`"
           >
-            <div>
-              <h3 class="text-xl font-semibold mb-2">{{ card.title }}</h3>
-              <p class="text-gray-200">{{ card.description }}</p>
-            </div>
+            <h2 class="text-xl font-semibold mb-2">{{ card.title }}</h2>
+            <p class="text-sm mb-4">{{ card.description }}</p>
             <a
               :href="card.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="relative inline-block w-1/2 px-2 py-2 mt-4 text-white bg-sky-900 border-2 border-sky-800 rounded-full overflow-hidden group transform transition-transform hover:scale-100"
+              class="relative inline-block w-full sm:w-1/2 px-4 py-2 mt-4 text-white bg-sky-900 border-2 border-sky-800 rounded-full overflow-hidden group transform transition-transform hover:scale-100"
             >
               <span
                 class="relative z-10 flex items-center justify-center h-full w-full transition-colors duration-300 ease-in-out group-hover:text-sky-900"
-                >En savoir plus</span
               >
+                En savoir plus
+              </span>
 
               <div
                 class="absolute inset-0 w-full h-full bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
