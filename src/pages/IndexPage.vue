@@ -37,10 +37,7 @@
     <div class="rm-wrapper">
       <AboutSection />
     </div>
-    <div
-      class="rm-wrapper"
-      style="background-image: url('src/assets/bg-16.jpg')"
-    >
+    <div class="rm-wrapper" style="background-image: url('/img/bg-16.jpg')">
       <MethodSection />
     </div>
     <div class="rm-wrapper bg-sky-950">
