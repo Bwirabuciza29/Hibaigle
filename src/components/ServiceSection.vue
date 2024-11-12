@@ -29,7 +29,7 @@
         <img
           src="/img/Marni_2.png"
           alt="Filigrane"
-          class="absolute -top-4 -left-24 w-64 h-68 opacity-90 overflow-hidden"
+          class="absolute -top-24 -left-36 w-64 h-68 opacity-90 overflow-hidden"
         />
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <!-- Card component -->
